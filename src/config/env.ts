@@ -1,13 +1,9 @@
 import fs from "fs";
 import dotenv from "dotenv";
 
-// Colyseus Cloud는 대시보드 환경변수를 .env.production 으로 심어준다.
-// 로컬은 .env 사용. (이미 설정된 값은 덮어쓰지 않음)
-const nodeEnv = process.env.NODE_ENV || "development";
-if (process.env.REGION) {
-  dotenv.config({ path: `.env.${process.env.REGION}.${nodeEnv}` });
-}
-dotenv.config({ path: `.env.${nodeEnv}` });
+// Colyseus Cloud는 대시보드 환경변수를 .env.cloud 로 심어준다. 로컬은 .env 사용.
+// (이미 설정된 값은 덮어쓰지 않음)
+dotenv.config({ path: ".env.cloud" });
 dotenv.config();
 
 function required(name: string): string {
