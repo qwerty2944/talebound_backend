@@ -35,7 +35,8 @@ function dedupePm2Processes(): void {
       execSync(`pm2 delete ${myPmId}`, { timeout: 10_000 });
       return; // pm2 delete가 SIGINT를 보냄
     }
-    for (const twin of twins.slice(1)) {
+    // survivor(최대 pm_id) 본인만 남기고 삭제 — slice(1)은 최소만 남겨 자기 자신을 죽이는 버그였음
+    for (const twin of twins.filter((t) => t !== survivor)) {
       console.warn(`[pm2-dedupe] 중복 프로세스 pm_id=${twin} 삭제`);
       try { execSync(`pm2 delete ${twin}`, { timeout: 10_000 }); } catch { /* 이미 죽었으면 무시 */ }
     }
