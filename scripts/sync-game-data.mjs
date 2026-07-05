@@ -15,6 +15,8 @@ const DEST = path.resolve(__dirname, "../game-data");
 const FILES = [
   "monsters/monsters.json",
   "npcs/healers.json",
+  "npcs/merchants.json",
+  "npcs/trainers.json",
   "config/enhancement.json",
   "items/equipment.json",
   "items/consumables.json",

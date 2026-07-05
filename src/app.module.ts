@@ -7,6 +7,8 @@ import { BattleModule } from "./battle/battle.module.js";
 import { NpcModule } from "./npc/npc.module.js";
 import { QuestModule } from "./quest/quest.module.js";
 import { DungeonModule } from "./dungeon/dungeon.module.js";
+import { ShopModule } from "./shop/shop.module.js";
+import { TrainingModule } from "./training/training.module.js";
 
 @Controller()
 class HealthController {
@@ -17,7 +19,7 @@ class HealthController {
 }
 
 @Module({
-  imports: [AuthModule, RpcModule, TablesModule, CronModule, BattleModule, NpcModule, QuestModule, DungeonModule],
+  imports: [AuthModule, RpcModule, TablesModule, CronModule, BattleModule, NpcModule, QuestModule, DungeonModule, ShopModule, TrainingModule],
   controllers: [HealthController],
 })
 export class AppModule {}
