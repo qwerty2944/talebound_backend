@@ -23,7 +23,8 @@ export class NpcController {
 
     // 부상 등급과 캐릭터 레벨은 DB에서 읽는다 (클라 전달값 불신)
     const { rows } = await pool.query(
-      `select injuries -> $2 as injury, level from characters where user_id = $1`,
+      // $2::int 캐스트 필수 — 없으면 jsonb -> text(키 조회)로 바인딩돼 배열 인덱스 조회 실패
+      `select injuries -> $2::int as injury, level from characters where user_id = $1`,
       [req.userId, injuryIndex]
     );
     const injury = rows[0]?.injury as { type?: string } | null;
