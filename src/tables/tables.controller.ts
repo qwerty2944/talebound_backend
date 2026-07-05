@@ -23,8 +23,8 @@ import { JwtAuthGuard } from "../auth/jwt-auth.guard.js";
  */
 
 // 업데이트 허용 컬럼 (본인 row 한정)
+// level/experience/gold/gems는 서버 권위(battle/complete, npc/heal 등)로만 변경 가능
 const PROFILE_COLUMNS = new Set([
-  "level", "experience", "gold", "gems",
   "fatigue", "fatigue_updated_at",
   "current_hp", "current_mp", "current_map_id",
   "injuries", "traits", "religion", "buffs",

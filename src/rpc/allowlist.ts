@@ -19,9 +19,7 @@ export const RPC_ALLOWLIST: Record<string, RpcMeta> = {
   use_crystal: { returns: "scalar", injectUserId: true },
   consume_whisper_charge: { returns: "set", injectUserId: true },
   add_injury: { returns: "scalar", injectUserId: true },
-  heal_injury_with_gold: { returns: "scalar", injectUserId: true },
   check_daily_login: { returns: "scalar", injectUserId: true },
-  update_karma: { returns: "set", injectUserId: true },
 
   // 캐릭터
   save_character: { returns: "scalar", injectUserId: true },
