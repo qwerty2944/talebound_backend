@@ -1,0 +1,4065 @@
+{
+  "version": "2.0.0",
+  "generatedAt": "2026-07-05T07:22:34.411Z",
+  "metadata": {
+    "version": "1.0.0",
+    "description": "몬스터 시스템 메타데이터",
+    "monsterTypes": {
+      "beast": {
+        "id": "beast",
+        "nameKo": "야수",
+        "nameEn": "Beast",
+        "icon": "🐾",
+        "description": "동물, 곤충 등 자연의 생명체"
+      },
+      "humanoid": {
+        "id": "humanoid",
+        "nameKo": "인간형",
+        "nameEn": "Humanoid",
+        "icon": "👤",
+        "description": "인간이나 인간과 비슷한 형태의 존재"
+      },
+      "undead": {
+        "id": "undead",
+        "nameKo": "언데드",
+        "nameEn": "Undead",
+        "icon": "💀",
+        "description": "죽음에서 되살아난 존재"
+      },
+      "demon": {
+        "id": "demon",
+        "nameKo": "악마",
+        "nameEn": "Demon",
+        "icon": "👿",
+        "description": "어둠의 차원에서 온 악마"
+      },
+      "dragon": {
+        "id": "dragon",
+        "nameKo": "용족",
+        "nameEn": "Dragon",
+        "icon": "🐉",
+        "description": "드래곤과 그 권속"
+      },
+      "spirit": {
+        "id": "spirit",
+        "nameKo": "정령",
+        "nameEn": "Spirit",
+        "icon": "👻",
+        "description": "자연의 정령이나 영혼"
+      },
+      "construct": {
+        "id": "construct",
+        "nameKo": "구조물",
+        "nameEn": "Construct",
+        "icon": "🤖",
+        "description": "마법이나 기술로 만들어진 존재"
+      },
+      "plant": {
+        "id": "plant",
+        "nameKo": "식물",
+        "nameEn": "Plant",
+        "icon": "🌿",
+        "description": "움직이는 식물형 몬스터"
+      },
+      "elemental": {
+        "id": "elemental",
+        "nameKo": "원소",
+        "nameEn": "Elemental",
+        "icon": "✨",
+        "description": "순수한 원소의 힘으로 이루어진 존재"
+      },
+      "aberration": {
+        "id": "aberration",
+        "nameKo": "이형",
+        "nameEn": "Aberration",
+        "icon": "👁️",
+        "description": "비정상적이고 기괴한 존재"
+      }
+    },
+    "categories": {
+      "mammals": {
+        "id": "mammals",
+        "nameKo": "포유류",
+        "nameEn": "Mammals",
+        "type": "beast",
+        "icon": "🐺"
+      },
+      "insects": {
+        "id": "insects",
+        "nameKo": "곤충류",
+        "nameEn": "Insects",
+        "type": "beast",
+        "icon": "🕷️"
+      },
+      "birds": {
+        "id": "birds",
+        "nameKo": "조류",
+        "nameEn": "Birds",
+        "type": "beast",
+        "icon": "🦅"
+      },
+      "reptiles": {
+        "id": "reptiles",
+        "nameKo": "파충류",
+        "nameEn": "Reptiles",
+        "type": "beast",
+        "icon": "🦎"
+      },
+      "bandits": {
+        "id": "bandits",
+        "nameKo": "도적",
+        "nameEn": "Bandits",
+        "type": "humanoid",
+        "icon": "🗡️"
+      },
+      "cultists": {
+        "id": "cultists",
+        "nameKo": "광신도",
+        "nameEn": "Cultists",
+        "type": "humanoid",
+        "icon": "🔮"
+      },
+      "soldiers": {
+        "id": "soldiers",
+        "nameKo": "병사",
+        "nameEn": "Soldiers",
+        "type": "humanoid",
+        "icon": "⚔️"
+      },
+      "nature_spirits": {
+        "id": "nature_spirits",
+        "nameKo": "자연 정령",
+        "nameEn": "Nature Spirits",
+        "type": "spirit",
+        "icon": "🍃"
+      },
+      "ghosts": {
+        "id": "ghosts",
+        "nameKo": "유령",
+        "nameEn": "Ghosts",
+        "type": "spirit",
+        "icon": "👻"
+      },
+      "zombies": {
+        "id": "zombies",
+        "nameKo": "좀비",
+        "nameEn": "Zombies",
+        "type": "undead",
+        "icon": "🧟"
+      },
+      "skeletons": {
+        "id": "skeletons",
+        "nameKo": "해골",
+        "nameEn": "Skeletons",
+        "type": "undead",
+        "icon": "💀"
+      },
+      "golems": {
+        "id": "golems",
+        "nameKo": "골렘",
+        "nameEn": "Golems",
+        "type": "construct",
+        "icon": "🗿"
+      },
+      "training": {
+        "id": "training",
+        "nameKo": "훈련용",
+        "nameEn": "Training",
+        "type": "construct",
+        "icon": "🎯"
+      },
+      "treants": {
+        "id": "treants",
+        "nameKo": "나무 정령",
+        "nameEn": "Treants",
+        "type": "plant",
+        "icon": "🌳"
+      },
+      "fire_elementals": {
+        "id": "fire_elementals",
+        "nameKo": "화염 원소",
+        "nameEn": "Fire Elementals",
+        "type": "elemental",
+        "icon": "🔥"
+      },
+      "ice_elementals": {
+        "id": "ice_elementals",
+        "nameKo": "냉기 원소",
+        "nameEn": "Ice Elementals",
+        "type": "elemental",
+        "icon": "❄️"
+      }
+    },
+    "alignments": {
+      "good": {
+        "id": "good",
+        "nameKo": "선",
+        "nameEn": "Good",
+        "karmaModifier": 5,
+        "description": "선한 존재를 공격하면 카르마 감소"
+      },
+      "neutral": {
+        "id": "neutral",
+        "nameKo": "중립",
+        "nameEn": "Neutral",
+        "karmaModifier": 0,
+        "description": "카르마 변화 없음"
+      },
+      "evil": {
+        "id": "evil",
+        "nameKo": "악",
+        "nameEn": "Evil",
+        "karmaModifier": -2,
+        "description": "악한 존재를 처치하면 카르마 상승"
+      }
+    },
+    "behaviors": {
+      "passive": {
+        "id": "passive",
+        "nameKo": "평화적",
+        "nameEn": "Passive",
+        "preemptive": false,
+        "description": "공격하지 않음"
+      },
+      "defensive": {
+        "id": "defensive",
+        "nameKo": "방어적",
+        "nameEn": "Defensive",
+        "preemptive": false,
+        "description": "공격받으면 반격"
+      },
+      "aggressive": {
+        "id": "aggressive",
+        "nameKo": "공격적",
+        "nameEn": "Aggressive",
+        "preemptive": true,
+        "description": "먼저 공격함"
+      },
+      "territorial": {
+        "id": "territorial",
+        "nameKo": "영역적",
+        "nameEn": "Territorial",
+        "preemptive": true,
+        "description": "영역에 들어오면 공격"
+      }
+    },
+    "ranks": {
+      "normal": {
+        "id": "normal",
+        "nameKo": "일반",
+        "nameEn": "Normal",
+        "statMultiplier": 1,
+        "rewardMultiplier": 1,
+        "icon": ""
+      },
+      "elite": {
+        "id": "elite",
+        "nameKo": "정예",
+        "nameEn": "Elite",
+        "statMultiplier": 1.5,
+        "rewardMultiplier": 2,
+        "icon": "⭐"
+      },
+      "boss": {
+        "id": "boss",
+        "nameKo": "보스",
+        "nameEn": "Boss",
+        "statMultiplier": 3,
+        "rewardMultiplier": 5,
+        "icon": "👑"
+      },
+      "raid": {
+        "id": "raid",
+        "nameKo": "레이드",
+        "nameEn": "Raid",
+        "statMultiplier": 10,
+        "rewardMultiplier": 20,
+        "icon": "🏆"
+      }
+    },
+    "physicalResistanceTypes": {
+      "slashResist": {
+        "id": "slashResist",
+        "nameKo": "베기 저항",
+        "nameEn": "Slash Resistance",
+        "weaponTypes": [
+          "sword",
+          "axe",
+          "dagger"
+        ]
+      },
+      "pierceResist": {
+        "id": "pierceResist",
+        "nameKo": "찌르기 저항",
+        "nameEn": "Pierce Resistance",
+        "weaponTypes": [
+          "spear",
+          "bow",
+          "crossbow",
+          "dagger"
+        ]
+      },
+      "crushResist": {
+        "id": "crushResist",
+        "nameKo": "타격 저항",
+        "nameEn": "Crush Resistance",
+        "weaponTypes": [
+          "mace",
+          "staff",
+          "fist"
+        ]
+      }
+    },
+    "elementResistTypes": {
+      "fire": {
+        "id": "fire",
+        "nameKo": "화염 저항",
+        "nameEn": "Fire Resistance",
+        "icon": "🔥"
+      },
+      "ice": {
+        "id": "ice",
+        "nameKo": "냉기 저항",
+        "nameEn": "Ice Resistance",
+        "icon": "❄️"
+      },
+      "lightning": {
+        "id": "lightning",
+        "nameKo": "번개 저항",
+        "nameEn": "Lightning Resistance",
+        "icon": "⚡"
+      },
+      "earth": {
+        "id": "earth",
+        "nameKo": "대지 저항",
+        "nameEn": "Earth Resistance",
+        "icon": "🪨"
+      },
+      "holy": {
+        "id": "holy",
+        "nameKo": "신성 저항",
+        "nameEn": "Holy Resistance",
+        "icon": "✨"
+      },
+      "dark": {
+        "id": "dark",
+        "nameKo": "암흑 저항",
+        "nameEn": "Dark Resistance",
+        "icon": "🌑"
+      }
+    },
+    "typeDefaultMagicResist": {
+      "beast": {
+        "fire": 1,
+        "ice": 1,
+        "lightning": 1,
+        "earth": 1,
+        "holy": 1,
+        "dark": 1
+      },
+      "humanoid": {
+        "fire": 1,
+        "ice": 1,
+        "lightning": 1,
+        "earth": 1,
+        "holy": 1,
+        "dark": 1
+      },
+      "undead": {
+        "fire": 0.9,
+        "ice": 1,
+        "lightning": 1,
+        "earth": 1,
+        "holy": 1.8,
+        "dark": 0.4
+      },
+      "spirit": {
+        "fire": 1.2,
+        "ice": 0.7,
+        "lightning": 1,
+        "earth": 0.8,
+        "holy": 0.8,
+        "dark": 1.2
+      },
+      "plant": {
+        "fire": 1.5,
+        "ice": 0.8,
+        "lightning": 1,
+        "earth": 0.6,
+        "holy": 1,
+        "dark": 1
+      },
+      "construct": {
+        "fire": 0.9,
+        "ice": 1,
+        "lightning": 1.3,
+        "earth": 0.7,
+        "holy": 1,
+        "dark": 1
+      },
+      "slime": {
+        "fire": 1.2,
+        "ice": 0.9,
+        "lightning": 1.1,
+        "earth": 0.7,
+        "holy": 1,
+        "dark": 1
+      },
+      "elemental": {
+        "fire": 1,
+        "ice": 1,
+        "lightning": 1,
+        "earth": 1,
+        "holy": 1,
+        "dark": 1
+      },
+      "demon": {
+        "fire": 0.5,
+        "ice": 1.2,
+        "lightning": 1,
+        "earth": 1,
+        "holy": 1.8,
+        "dark": 0.3
+      },
+      "dragon": {
+        "fire": 0.5,
+        "ice": 0.8,
+        "lightning": 0.8,
+        "earth": 0.8,
+        "holy": 1,
+        "dark": 1
+      }
+    }
+  },
+  "monsters": [
+    {
+      "id": "green_slime",
+      "nameKo": "초록 슬라임",
+      "nameEn": "Green Slime",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "swamp_entrance"
+      ],
+      "level": 3,
+      "element": "earth",
+      "icon": "🟢",
+      "stats": {
+        "hp": 50,
+        "attack": 6,
+        "defense": 3,
+        "speed": 4,
+        "physicalResist": {
+          "slashResist": 1.5,
+          "pierceResist": 1.3,
+          "crushResist": 0.4
+        },
+        "elementResist": {
+          "fire": 1.3,
+          "ice": 0.9,
+          "lightning": 1.1,
+          "earth": 0.6,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 19,
+        "gold": 8
+      },
+      "drops": [
+        {
+          "itemId": "slime_gel",
+          "chance": 0.6,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "slime_core",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "passive",
+      "description": {
+        "ko": "늪지대에 서식하는 녹색 슬라임. 베기에 약하고 타격에 매우 강하다.",
+        "en": "A green slime living in swamps. Weak to slashing, very resistant to crushing."
+      },
+      "type": "amorphous",
+      "category": "slime"
+    },
+    {
+      "id": "blue_slime",
+      "nameKo": "파란 슬라임",
+      "nameEn": "Blue Slime",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "shallow_marsh"
+      ],
+      "level": 5,
+      "element": "ice",
+      "icon": "🔵",
+      "stats": {
+        "hp": 65,
+        "attack": 10,
+        "defense": 4,
+        "speed": 5,
+        "physicalResist": {
+          "slashResist": 1.5,
+          "pierceResist": 1.4,
+          "crushResist": 0.4
+        },
+        "elementResist": {
+          "fire": 1.5,
+          "ice": 0.4,
+          "lightning": 1.2,
+          "earth": 0.8,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 35,
+        "gold": 12
+      },
+      "drops": [
+        {
+          "itemId": "slime_gel",
+          "chance": 0.5,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "ice_slime_core",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "ice_essence",
+          "chance": 0.08,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "passive",
+      "description": {
+        "ko": "차가운 성질을 가진 파란 슬라임. 불에 약하고 냉기에 매우 강하다.",
+        "en": "A blue slime with cold properties. Weak to fire, very resistant to ice."
+      },
+      "type": "amorphous",
+      "category": "slime"
+    },
+    {
+      "id": "red_slime",
+      "nameKo": "빨간 슬라임",
+      "nameEn": "Red Slime",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "shallow_marsh"
+      ],
+      "level": 6,
+      "element": "fire",
+      "icon": "🔴",
+      "stats": {
+        "hp": 55,
+        "attack": 14,
+        "defense": 3,
+        "speed": 6,
+        "physicalResist": {
+          "slashResist": 1.5,
+          "pierceResist": 1.3,
+          "crushResist": 0.5
+        },
+        "elementResist": {
+          "fire": 0.4,
+          "ice": 1.5,
+          "lightning": 1,
+          "earth": 0.9,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 44,
+        "gold": 15
+      },
+      "drops": [
+        {
+          "itemId": "slime_gel",
+          "chance": 0.5,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "fire_slime_core",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "fire_essence",
+          "chance": 0.08,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "statusEffect": {
+        "type": "burn",
+        "chance": 0.2,
+        "duration": 2,
+        "damage": 4
+      },
+      "description": {
+        "ko": "뜨거운 성질을 가진 빨간 슬라임. 불에 강하고 냉기에 약하다.",
+        "en": "A red slime with hot properties. Resistant to fire, weak to ice."
+      },
+      "type": "amorphous",
+      "category": "slime"
+    },
+    {
+      "id": "poison_slime",
+      "nameKo": "독 슬라임",
+      "nameEn": "Poison Slime",
+      "rank": "elite",
+      "alignment": "neutral",
+      "mapIds": [
+        "shallow_marsh"
+      ],
+      "level": 8,
+      "element": "dark",
+      "icon": "🟣",
+      "stats": {
+        "hp": 80,
+        "attack": 12,
+        "defense": 5,
+        "speed": 5,
+        "physicalResist": {
+          "slashResist": 1.5,
+          "pierceResist": 1.4,
+          "crushResist": 0.3
+        },
+        "elementResist": {
+          "fire": 1.2,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 0.7,
+          "holy": 1.3,
+          "dark": 0.5
+        }
+      },
+      "rewards": {
+        "exp": 63,
+        "gold": 20
+      },
+      "drops": [
+        {
+          "itemId": "toxic_gel",
+          "chance": 0.5,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "poison_slime_core",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "potent_venom",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "dark_essence",
+          "chance": 0.08,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "statusEffect": {
+        "type": "poison",
+        "chance": 0.35,
+        "duration": 4,
+        "damage": 6
+      },
+      "description": {
+        "ko": "맹독을 품은 보라색 슬라임. 접촉시 독에 걸린다.",
+        "en": "A purple slime containing deadly poison. Contact causes poisoning."
+      },
+      "type": "amorphous",
+      "category": "slime"
+    },
+    {
+      "id": "golden_slime",
+      "nameKo": "황금 슬라임",
+      "nameEn": "Golden Slime",
+      "rank": "elite",
+      "alignment": "neutral",
+      "mapIds": [
+        "shallow_marsh"
+      ],
+      "level": 10,
+      "element": "holy",
+      "icon": "🟡",
+      "stats": {
+        "hp": 40,
+        "attack": 5,
+        "defense": 8,
+        "speed": 15,
+        "physicalResist": {
+          "slashResist": 1.4,
+          "pierceResist": 1.5,
+          "crushResist": 0.3
+        },
+        "elementResist": {
+          "fire": 0.8,
+          "ice": 0.8,
+          "lightning": 0.8,
+          "earth": 0.8,
+          "holy": 0.3,
+          "dark": 1.5
+        }
+      },
+      "rewards": {
+        "exp": 100,
+        "gold": 200
+      },
+      "drops": [
+        {
+          "itemId": "golden_gel",
+          "chance": 0.8,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "golden_slime_core",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "gold_nugget",
+          "chance": 0.5,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "holy_essence",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "passive",
+      "spawnCondition": {
+        "chance": 0.05
+      },
+      "description": {
+        "ko": "매우 희귀한 황금색 슬라임. 많은 골드를 드롭한다. 빠르게 도망친다.",
+        "en": "A very rare golden slime. Drops a lot of gold. Quickly escapes."
+      },
+      "type": "amorphous",
+      "category": "slime"
+    },
+    {
+      "id": "giant_slime",
+      "nameKo": "거대 슬라임",
+      "nameEn": "Giant Slime",
+      "rank": "boss",
+      "alignment": "neutral",
+      "mapIds": [
+        "slime_nest"
+      ],
+      "level": 12,
+      "element": "earth",
+      "icon": "🫧",
+      "stats": {
+        "hp": 400,
+        "attack": 25,
+        "defense": 15,
+        "speed": 3,
+        "physicalResist": {
+          "slashResist": 1.6,
+          "pierceResist": 1.5,
+          "crushResist": 0.3
+        },
+        "elementResist": {
+          "fire": 1.4,
+          "ice": 0.8,
+          "lightning": 1.1,
+          "earth": 0.5,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 109,
+        "gold": 30
+      },
+      "drops": [
+        {
+          "itemId": "giant_slime_gel",
+          "chance": 1,
+          "quantity": [
+            3,
+            5
+          ]
+        },
+        {
+          "itemId": "slime_king_core",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "slime_crown",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "earth_essence",
+          "chance": 0.25,
+          "quantity": [
+            1,
+            2
+          ]
+        }
+      ],
+      "behavior": "territorial",
+      "abilities": [
+        {
+          "id": "split",
+          "nameKo": "분열",
+          "nameEn": "Split",
+          "description": "HP가 50% 이하가 되면 작은 슬라임 2마리로 분열한다.",
+          "trigger": "hp_below_50"
+        },
+        {
+          "id": "absorb",
+          "nameKo": "흡수",
+          "nameEn": "Absorb",
+          "description": "주변의 작은 슬라임을 흡수하여 체력을 회복한다.",
+          "cooldown": 5
+        }
+      ],
+      "bossSchedule": "daily_noon",
+      "description": {
+        "ko": "수많은 슬라임이 합체한 거대한 슬라임. 늪지대의 지배자.",
+        "en": "A giant slime formed from countless slimes. The ruler of the swamp."
+      },
+      "type": "amorphous",
+      "category": "slime"
+    },
+    {
+      "id": "shadow_slime",
+      "nameKo": "그림자 슬라임",
+      "nameEn": "Shadow Slime",
+      "rank": "elite",
+      "alignment": "evil",
+      "mapIds": [
+        "slime_nest"
+      ],
+      "level": 9,
+      "element": "dark",
+      "icon": "⚫",
+      "stats": {
+        "hp": 70,
+        "attack": 18,
+        "defense": 4,
+        "speed": 10,
+        "physicalResist": {
+          "slashResist": 1.5,
+          "pierceResist": 1.4,
+          "crushResist": 0.4
+        },
+        "elementResist": {
+          "fire": 1,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1.8,
+          "dark": 0.3
+        }
+      },
+      "rewards": {
+        "exp": 74,
+        "gold": 22
+      },
+      "drops": [
+        {
+          "itemId": "shadow_gel",
+          "chance": 0.5,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "shadow_slime_core",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "dark_essence",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "spawnCondition": {
+        "period": [
+          "night"
+        ]
+      },
+      "statusEffect": {
+        "type": "blind",
+        "chance": 0.25,
+        "duration": 2
+      },
+      "description": {
+        "ko": "어둠 속에서 나타나는 검은 슬라임. 신성에 매우 약하고 암흑에 매우 강하다.",
+        "en": "A black slime appearing in darkness. Very weak to holy, very resistant to dark."
+      },
+      "type": "amorphous",
+      "category": "slime"
+    },
+    {
+      "id": "squirrel",
+      "nameKo": "다람쥐",
+      "nameEn": "Squirrel",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "forest_entrance"
+      ],
+      "level": 2,
+      "element": "earth",
+      "icon": "🐿️",
+      "stats": {
+        "hp": 30,
+        "attack": 5,
+        "defense": 2,
+        "speed": 8,
+        "physicalResist": {
+          "slashResist": 1,
+          "pierceResist": 1,
+          "crushResist": 1
+        },
+        "elementResist": {
+          "fire": 1.2,
+          "ice": 1,
+          "lightning": 1.1,
+          "earth": 0.8,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 12,
+        "gold": 5
+      },
+      "drops": [
+        {
+          "itemId": "acorn",
+          "chance": 0.5,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "squirrel_tail",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "description": {
+        "ko": "숲에 서식하는 다람쥐. 대지 속성을 가지고 있어 대지 마법에 강하다.",
+        "en": "A squirrel living in the forest. Has earth element, resistant to earth magic."
+      },
+      "type": "beast",
+      "category": "mammals"
+    },
+    {
+      "id": "squirrel_elder",
+      "nameKo": "늙은 다람쥐",
+      "nameEn": "Elder Squirrel",
+      "rank": "elite",
+      "alignment": "neutral",
+      "mapIds": [
+        "forest_entrance"
+      ],
+      "level": 3,
+      "element": "earth",
+      "icon": "🐿️",
+      "stats": {
+        "hp": 45,
+        "attack": 8,
+        "defense": 4,
+        "speed": 6,
+        "physicalResist": {
+          "slashResist": 1,
+          "pierceResist": 1,
+          "crushResist": 1
+        },
+        "elementResist": {
+          "fire": 1.2,
+          "ice": 1,
+          "lightning": 1.2,
+          "earth": 0.6,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 19,
+        "gold": 8
+      },
+      "drops": [
+        {
+          "itemId": "acorn",
+          "chance": 0.5,
+          "quantity": [
+            2,
+            4
+          ]
+        },
+        {
+          "itemId": "squirrel_tail",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "earth_essence",
+          "chance": 0.05,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "defensive",
+      "description": {
+        "ko": "오래 살아 지혜로운 다람쥐. 더 강한 대지의 힘을 가지고 있다.",
+        "en": "A wise old squirrel. Has stronger earth powers."
+      },
+      "type": "beast",
+      "category": "mammals"
+    },
+    {
+      "id": "wolf",
+      "nameKo": "늑대",
+      "nameEn": "Wolf",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 5,
+      "element": null,
+      "icon": "🐺",
+      "stats": {
+        "hp": 80,
+        "attack": 15,
+        "defense": 5,
+        "speed": 10,
+        "physicalResist": {
+          "slashResist": 1,
+          "pierceResist": 1.2,
+          "crushResist": 1
+        },
+        "elementResist": {
+          "fire": 1.1,
+          "ice": 0.9,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 35,
+        "gold": 12
+      },
+      "drops": [
+        {
+          "itemId": "wolf_fang",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "wolf_pelt",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "spawnCondition": {
+        "period": [
+          "night",
+          "dusk"
+        ]
+      },
+      "description": {
+        "ko": "밤에만 나타나는 야행성 늑대. 날카로운 이빨로 공격한다. 냉기에 강하다.",
+        "en": "A nocturnal wolf that only appears at night. Attacks with sharp fangs. Resistant to ice."
+      },
+      "type": "beast",
+      "category": "mammals"
+    },
+    {
+      "id": "dire_wolf",
+      "nameKo": "흉포한 늑대",
+      "nameEn": "Dire Wolf",
+      "rank": "elite",
+      "alignment": "neutral",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 7,
+      "element": null,
+      "icon": "🐺",
+      "stats": {
+        "hp": 120,
+        "attack": 22,
+        "defense": 8,
+        "speed": 12,
+        "physicalResist": {
+          "slashResist": 0.9,
+          "pierceResist": 1,
+          "crushResist": 0.9
+        },
+        "elementResist": {
+          "fire": 1.1,
+          "ice": 0.8,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1,
+          "dark": 0.9
+        }
+      },
+      "rewards": {
+        "exp": 53,
+        "gold": 18
+      },
+      "drops": [
+        {
+          "itemId": "wolf_fang",
+          "chance": 0.5,
+          "quantity": [
+            2,
+            3
+          ]
+        },
+        {
+          "itemId": "dire_wolf_pelt",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "beast_essence",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "spawnCondition": {
+        "period": [
+          "night"
+        ]
+      },
+      "description": {
+        "ko": "일반 늑대보다 훨씬 크고 사나운 늑대. 냉기에 매우 강하다.",
+        "en": "A much larger and fiercer wolf. Very resistant to ice."
+      },
+      "type": "beast",
+      "category": "mammals"
+    },
+    {
+      "id": "wild_boar",
+      "nameKo": "멧돼지",
+      "nameEn": "Wild Boar",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "forest_clearing"
+      ],
+      "level": 4,
+      "element": "earth",
+      "icon": "🐗",
+      "stats": {
+        "hp": 70,
+        "attack": 12,
+        "defense": 8,
+        "speed": 5,
+        "physicalResist": {
+          "slashResist": 0.8,
+          "pierceResist": 1,
+          "crushResist": 0.7
+        },
+        "elementResist": {
+          "fire": 1.1,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 0.7,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 27,
+        "gold": 10
+      },
+      "drops": [
+        {
+          "itemId": "boar_tusk",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "raw_meat",
+          "chance": 0.4,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "thick_hide",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "territorial",
+      "description": {
+        "ko": "숲에 사는 멧돼지. 영역을 침범하면 돌진해온다. 대지 마법에 강하다.",
+        "en": "A wild boar living in the forest. Charges when its territory is invaded. Resistant to earth."
+      },
+      "type": "beast",
+      "category": "mammals"
+    },
+    {
+      "id": "forest_bear",
+      "nameKo": "숲 곰",
+      "nameEn": "Forest Bear",
+      "rank": "elite",
+      "alignment": "neutral",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 8,
+      "element": "earth",
+      "icon": "🐻",
+      "stats": {
+        "hp": 180,
+        "attack": 25,
+        "defense": 15,
+        "speed": 4,
+        "physicalResist": {
+          "slashResist": 0.8,
+          "pierceResist": 0.9,
+          "crushResist": 0.7
+        },
+        "elementResist": {
+          "fire": 1.2,
+          "ice": 0.8,
+          "lightning": 1,
+          "earth": 0.6,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 63,
+        "gold": 20
+      },
+      "drops": [
+        {
+          "itemId": "bear_claw",
+          "chance": 0.35,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "bear_pelt",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "raw_meat",
+          "chance": 0.5,
+          "quantity": [
+            2,
+            4
+          ]
+        },
+        {
+          "itemId": "beast_essence",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "territorial",
+      "description": {
+        "ko": "깊은 숲의 주인. 거대한 몸집과 강력한 발톱을 가지고 있다. 대지와 냉기에 강하다.",
+        "en": "The lord of the deep forest. Has a massive body and powerful claws. Strong against earth and ice."
+      },
+      "type": "beast",
+      "category": "mammals"
+    },
+    {
+      "id": "rabbit",
+      "nameKo": "토끼",
+      "nameEn": "Rabbit",
+      "rank": "normal",
+      "alignment": "good",
+      "mapIds": [
+        "forest_entrance"
+      ],
+      "level": 1,
+      "element": null,
+      "icon": "🐰",
+      "stats": {
+        "hp": 15,
+        "attack": 2,
+        "defense": 1,
+        "speed": 12,
+        "physicalResist": {
+          "slashResist": 1.2,
+          "pierceResist": 1.2,
+          "crushResist": 1.2
+        },
+        "elementResist": {
+          "fire": 1.1,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 0.8,
+          "dark": 1.1
+        }
+      },
+      "rewards": {
+        "exp": 6,
+        "gold": 2
+      },
+      "drops": [
+        {
+          "itemId": "rabbit_fur",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "raw_meat",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "passive",
+      "description": {
+        "ko": "숲에 사는 귀여운 토끼. 공격하면 카르마가 감소한다. 신성에 약하다.",
+        "en": "A cute rabbit in the forest. Attacking it decreases karma. Weak to holy."
+      },
+      "type": "beast",
+      "category": "mammals"
+    },
+    {
+      "id": "fox",
+      "nameKo": "여우",
+      "nameEn": "Fox",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "forest_entrance"
+      ],
+      "level": 3,
+      "element": null,
+      "icon": "🦊",
+      "stats": {
+        "hp": 40,
+        "attack": 8,
+        "defense": 3,
+        "speed": 11,
+        "physicalResist": {
+          "slashResist": 1,
+          "pierceResist": 1,
+          "crushResist": 1
+        },
+        "elementResist": {
+          "fire": 1,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 19,
+        "gold": 8
+      },
+      "drops": [
+        {
+          "itemId": "fox_tail",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "fox_fur",
+          "chance": 0.25,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "defensive",
+      "description": {
+        "ko": "영리한 숲의 여우. 위험을 감지하면 빠르게 도망친다.",
+        "en": "A clever forest fox. Quickly escapes when sensing danger."
+      },
+      "type": "beast",
+      "category": "mammals"
+    },
+    {
+      "id": "animated_armor",
+      "nameKo": "움직이는 갑옷",
+      "nameEn": "Animated Armor",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "ancient_ruins"
+      ],
+      "level": 13,
+      "element": null,
+      "icon": "🛡️",
+      "stats": {
+        "hp": 120,
+        "attack": 22,
+        "defense": 20,
+        "speed": 5,
+        "physicalResist": {
+          "slashResist": 0.6,
+          "pierceResist": 0.7,
+          "crushResist": 0.5
+        },
+        "elementResist": {
+          "fire": 0.9,
+          "ice": 1,
+          "lightning": 1.4,
+          "earth": 0.8,
+          "holy": 1.2,
+          "dark": 0.8
+        }
+      },
+      "rewards": {
+        "exp": 122,
+        "gold": 32
+      },
+      "drops": [
+        {
+          "itemId": "ancient_armor_piece",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "enchanted_metal",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "magic_essence",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "description": {
+        "ko": "마법으로 움직이는 빈 갑옷. 번개에 약하고 신성/암흑에 저항력이 있다.",
+        "en": "An empty armor animated by magic. Weak to lightning, resistant to holy/dark."
+      },
+      "type": "construct",
+      "category": "armor"
+    },
+    {
+      "id": "stone_golem",
+      "nameKo": "석재 골렘",
+      "nameEn": "Stone Golem",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "ancient_ruins"
+      ],
+      "level": 12,
+      "element": "earth",
+      "icon": "🗿",
+      "stats": {
+        "hp": 200,
+        "attack": 25,
+        "defense": 25,
+        "speed": 2,
+        "physicalResist": {
+          "slashResist": 0.5,
+          "pierceResist": 0.5,
+          "crushResist": 0.3
+        },
+        "elementResist": {
+          "fire": 0.8,
+          "ice": 1,
+          "lightning": 1.5,
+          "earth": 0.4,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 109,
+        "gold": 30
+      },
+      "drops": [
+        {
+          "itemId": "stone_core",
+          "chance": 0.25,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "ancient_stone",
+          "chance": 0.4,
+          "quantity": [
+            2,
+            4
+          ]
+        },
+        {
+          "itemId": "earth_essence",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "territorial",
+      "description": {
+        "ko": "유적을 지키는 돌로 만든 골렘. 번개에 약하고 대지에 매우 강하다.",
+        "en": "A stone golem guarding the ruins. Weak to lightning, very strong against earth."
+      },
+      "type": "construct",
+      "category": "golem"
+    },
+    {
+      "id": "iron_golem",
+      "nameKo": "철재 골렘",
+      "nameEn": "Iron Golem",
+      "rank": "elite",
+      "alignment": "neutral",
+      "mapIds": [
+        "ancient_ruins"
+      ],
+      "level": 15,
+      "element": "earth",
+      "icon": "🤖",
+      "stats": {
+        "hp": 300,
+        "attack": 35,
+        "defense": 35,
+        "speed": 3,
+        "physicalResist": {
+          "slashResist": 0.3,
+          "pierceResist": 0.4,
+          "crushResist": 0.3
+        },
+        "elementResist": {
+          "fire": 0.9,
+          "ice": 1,
+          "lightning": 1.6,
+          "earth": 0.3,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 150,
+        "gold": 38
+      },
+      "drops": [
+        {
+          "itemId": "iron_core",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "ancient_iron",
+          "chance": 0.35,
+          "quantity": [
+            2,
+            3
+          ]
+        },
+        {
+          "itemId": "golem_heart",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "earth_essence",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            2
+          ]
+        }
+      ],
+      "behavior": "territorial",
+      "description": {
+        "ko": "철로 만들어진 강력한 골렘. 번개에 매우 약하고 대지에 극도로 강하다.",
+        "en": "A powerful golem made of iron. Very weak to lightning, extremely strong against earth."
+      },
+      "type": "construct",
+      "category": "golem"
+    },
+    {
+      "id": "scarecrow",
+      "nameKo": "허수아비",
+      "nameEn": "Scarecrow",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "training_ground"
+      ],
+      "level": 1,
+      "element": null,
+      "icon": "🎃",
+      "stats": {
+        "hp": 50,
+        "attack": 0,
+        "defense": 0,
+        "speed": 0,
+        "physicalResist": {
+          "slashResist": 1.5,
+          "pierceResist": 1.5,
+          "crushResist": 0.5
+        },
+        "elementResist": {
+          "fire": 1.5,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 6,
+        "gold": 2
+      },
+      "drops": [],
+      "behavior": "passive",
+      "description": {
+        "ko": "훈련용 허수아비. 반격하지 않는다. 타격과 불에 약하다.",
+        "en": "Training dummy. Does not fight back. Weak to crushing attacks and fire."
+      },
+      "type": "construct",
+      "category": "scarecrow"
+    },
+    {
+      "id": "training_dummy_advanced",
+      "nameKo": "고급 훈련 인형",
+      "nameEn": "Advanced Training Dummy",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "training_ground"
+      ],
+      "level": 5,
+      "element": null,
+      "icon": "🎯",
+      "stats": {
+        "hp": 150,
+        "attack": 5,
+        "defense": 5,
+        "speed": 3,
+        "physicalResist": {
+          "slashResist": 1,
+          "pierceResist": 1,
+          "crushResist": 1
+        },
+        "elementResist": {
+          "fire": 1,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 35,
+        "gold": 12
+      },
+      "drops": [],
+      "behavior": "defensive",
+      "description": {
+        "ko": "반격하는 고급 훈련 인형. 다양한 공격을 연습할 수 있다.",
+        "en": "An advanced dummy that fights back. Good for practicing various attacks."
+      },
+      "type": "construct",
+      "category": "scarecrow"
+    },
+    {
+      "id": "forest_bandit",
+      "nameKo": "숲속 도적",
+      "nameEn": "Forest Bandit",
+      "rank": "normal",
+      "alignment": "evil",
+      "mapIds": [
+        "bandit_camp"
+      ],
+      "level": 4,
+      "element": null,
+      "icon": "🗡️",
+      "stats": {
+        "hp": 45,
+        "attack": 12,
+        "defense": 6,
+        "speed": 9,
+        "physicalResist": {
+          "slashResist": 1,
+          "pierceResist": 1,
+          "crushResist": 1
+        },
+        "elementResist": {
+          "fire": 1,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 27,
+        "gold": 20
+      },
+      "drops": [
+        {
+          "itemId": "stolen_coin",
+          "chance": 0.5,
+          "quantity": [
+            5,
+            15
+          ]
+        },
+        {
+          "itemId": "rusty_dagger",
+          "chance": 0.08,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "bandit_mask",
+          "chance": 0.05,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "description": {
+        "ko": "숲에 숨어 여행자를 습격하는 도적.",
+        "en": "A bandit who hides in the forest and ambushes travelers."
+      },
+      "type": "humanoid",
+      "category": "bandits"
+    },
+    {
+      "id": "bandit_archer",
+      "nameKo": "도적 궁수",
+      "nameEn": "Bandit Archer",
+      "rank": "normal",
+      "alignment": "evil",
+      "mapIds": [
+        "bandit_camp"
+      ],
+      "level": 5,
+      "element": null,
+      "icon": "🏹",
+      "stats": {
+        "hp": 40,
+        "attack": 15,
+        "defense": 4,
+        "speed": 10,
+        "physicalResist": {
+          "slashResist": 1,
+          "pierceResist": 0.9,
+          "crushResist": 1.1
+        },
+        "elementResist": {
+          "fire": 1,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 35,
+        "gold": 24
+      },
+      "drops": [
+        {
+          "itemId": "stolen_coin",
+          "chance": 0.4,
+          "quantity": [
+            3,
+            10
+          ]
+        },
+        {
+          "itemId": "crude_arrow",
+          "chance": 0.6,
+          "quantity": [
+            5,
+            15
+          ]
+        },
+        {
+          "itemId": "hunting_bow",
+          "chance": 0.05,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "description": {
+        "ko": "원거리에서 화살을 쏘는 도적 궁수.",
+        "en": "A bandit archer who shoots arrows from a distance."
+      },
+      "type": "humanoid",
+      "category": "bandits"
+    },
+    {
+      "id": "bandit_brute",
+      "nameKo": "도적 깡패",
+      "nameEn": "Bandit Brute",
+      "rank": "elite",
+      "alignment": "evil",
+      "mapIds": [
+        "bandit_camp"
+      ],
+      "level": 6,
+      "element": null,
+      "icon": "💪",
+      "stats": {
+        "hp": 80,
+        "attack": 18,
+        "defense": 10,
+        "speed": 5,
+        "physicalResist": {
+          "slashResist": 0.9,
+          "pierceResist": 1,
+          "crushResist": 0.8
+        },
+        "elementResist": {
+          "fire": 1,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 44,
+        "gold": 30
+      },
+      "drops": [
+        {
+          "itemId": "stolen_coin",
+          "chance": 0.6,
+          "quantity": [
+            10,
+            25
+          ]
+        },
+        {
+          "itemId": "spiked_club",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "bandit_insignia",
+          "chance": 0.08,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "description": {
+        "ko": "덩치 큰 도적 깡패. 무식하지만 힘이 세다.",
+        "en": "A big bandit brute. Dumb but strong."
+      },
+      "type": "humanoid",
+      "category": "bandits"
+    },
+    {
+      "id": "bandit_mage",
+      "nameKo": "도적 마법사",
+      "nameEn": "Bandit Mage",
+      "rank": "elite",
+      "alignment": "evil",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 8,
+      "element": "fire",
+      "icon": "🔥",
+      "stats": {
+        "hp": 55,
+        "attack": 22,
+        "defense": 5,
+        "speed": 8,
+        "physicalResist": {
+          "slashResist": 1.1,
+          "pierceResist": 1.1,
+          "crushResist": 1.2
+        },
+        "elementResist": {
+          "fire": 0.5,
+          "ice": 1.3,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1,
+          "dark": 0.9
+        }
+      },
+      "rewards": {
+        "exp": 63,
+        "gold": 40
+      },
+      "drops": [
+        {
+          "itemId": "stolen_coin",
+          "chance": 0.5,
+          "quantity": [
+            15,
+            30
+          ]
+        },
+        {
+          "itemId": "fire_scroll",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "mage_robe_torn",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "fire_essence",
+          "chance": 0.08,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "description": {
+        "ko": "도적단에 합류한 타락한 마법사. 화염에 강하고 냉기에 약하다.",
+        "en": "A corrupted mage who joined the bandits. Strong against fire, weak to ice."
+      },
+      "type": "humanoid",
+      "category": "bandits"
+    },
+    {
+      "id": "highway_robber",
+      "nameKo": "노상강도",
+      "nameEn": "Highway Robber",
+      "rank": "normal",
+      "alignment": "evil",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 7,
+      "element": null,
+      "icon": "🥷",
+      "stats": {
+        "hp": 60,
+        "attack": 16,
+        "defense": 7,
+        "speed": 11,
+        "physicalResist": {
+          "slashResist": 1,
+          "pierceResist": 1,
+          "crushResist": 1
+        },
+        "elementResist": {
+          "fire": 1,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 53,
+        "gold": 36
+      },
+      "drops": [
+        {
+          "itemId": "stolen_goods",
+          "chance": 0.4,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "stolen_coin",
+          "chance": 0.7,
+          "quantity": [
+            20,
+            50
+          ]
+        },
+        {
+          "itemId": "smoke_bomb",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            2
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "description": {
+        "ko": "길을 지나는 여행자를 노리는 노상강도.",
+        "en": "A highway robber who targets passing travelers."
+      },
+      "type": "humanoid",
+      "category": "bandits"
+    },
+    {
+      "id": "giant_ant",
+      "nameKo": "거대 개미",
+      "nameEn": "Giant Ant",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 5,
+      "element": "earth",
+      "icon": "🐜",
+      "stats": {
+        "hp": 45,
+        "attack": 10,
+        "defense": 7,
+        "speed": 8,
+        "physicalResist": {
+          "slashResist": 0.8,
+          "pierceResist": 0.9,
+          "crushResist": 1
+        },
+        "elementResist": {
+          "fire": 1.2,
+          "ice": 1,
+          "lightning": 1.1,
+          "earth": 0.6,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 35,
+        "gold": 12
+      },
+      "drops": [
+        {
+          "itemId": "ant_mandible",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "ant_carapace",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "description": {
+        "ko": "거대한 개미. 불에 약하고 대지 마법에 강하다.",
+        "en": "A giant ant. Weak to fire, strong against earth magic."
+      },
+      "type": "insect",
+      "category": "ant"
+    },
+    {
+      "id": "ant_soldier",
+      "nameKo": "병정개미",
+      "nameEn": "Soldier Ant",
+      "rank": "elite",
+      "alignment": "neutral",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 7,
+      "element": "earth",
+      "icon": "🐜",
+      "stats": {
+        "hp": 75,
+        "attack": 16,
+        "defense": 12,
+        "speed": 7,
+        "physicalResist": {
+          "slashResist": 0.7,
+          "pierceResist": 0.8,
+          "crushResist": 0.9
+        },
+        "elementResist": {
+          "fire": 1.3,
+          "ice": 1,
+          "lightning": 1.2,
+          "earth": 0.5,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 53,
+        "gold": 18
+      },
+      "drops": [
+        {
+          "itemId": "ant_mandible",
+          "chance": 0.5,
+          "quantity": [
+            2,
+            3
+          ]
+        },
+        {
+          "itemId": "ant_carapace",
+          "chance": 0.35,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "earth_essence",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "description": {
+        "ko": "개미굴을 지키는 병정개미. 불에 약하고 대지에 매우 강하다.",
+        "en": "A soldier ant guarding the anthill. Weak to fire, very strong against earth."
+      },
+      "type": "insect",
+      "category": "ant"
+    },
+    {
+      "id": "giant_beetle",
+      "nameKo": "거대 딱정벌레",
+      "nameEn": "Giant Beetle",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "forest_entrance"
+      ],
+      "level": 3,
+      "element": "earth",
+      "icon": "🪲",
+      "stats": {
+        "hp": 50,
+        "attack": 8,
+        "defense": 10,
+        "speed": 3,
+        "physicalResist": {
+          "slashResist": 0.5,
+          "pierceResist": 0.7,
+          "crushResist": 1.2
+        },
+        "elementResist": {
+          "fire": 1.3,
+          "ice": 1,
+          "lightning": 1.3,
+          "earth": 0.5,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 19,
+        "gold": 8
+      },
+      "drops": [
+        {
+          "itemId": "beetle_shell",
+          "chance": 0.35,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "beetle_horn",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "defensive",
+      "description": {
+        "ko": "단단한 껍질을 가진 거대한 딱정벌레. 대지 마법에 매우 약하다.",
+        "en": "A giant beetle with a hard shell. Very weak to earth magic."
+      },
+      "type": "insect",
+      "category": "beetle"
+    },
+    {
+      "id": "cave_centipede",
+      "nameKo": "동굴 지네",
+      "nameEn": "Cave Centipede",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "ancient_ruins"
+      ],
+      "level": 10,
+      "element": "dark",
+      "icon": "🐛",
+      "stats": {
+        "hp": 90,
+        "attack": 20,
+        "defense": 6,
+        "speed": 11,
+        "physicalResist": {
+          "slashResist": 1.2,
+          "pierceResist": 0.8,
+          "crushResist": 1
+        },
+        "elementResist": {
+          "fire": 1.2,
+          "ice": 1,
+          "lightning": 1.1,
+          "earth": 0.9,
+          "holy": 1.3,
+          "dark": 0.6
+        }
+      },
+      "rewards": {
+        "exp": 85,
+        "gold": 25
+      },
+      "drops": [
+        {
+          "itemId": "centipede_leg",
+          "chance": 0.4,
+          "quantity": [
+            2,
+            4
+          ]
+        },
+        {
+          "itemId": "centipede_venom",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "statusEffect": {
+        "type": "poison",
+        "chance": 0.35,
+        "duration": 4,
+        "damage": 8
+      },
+      "description": {
+        "ko": "유적의 어둠 속에 사는 거대한 지네. 신성에 약하고 암흑에 강하다.",
+        "en": "A giant centipede living in the darkness of ruins. Weak to holy, strong against dark."
+      },
+      "type": "insect",
+      "category": "centipede"
+    },
+    {
+      "id": "forest_spider",
+      "nameKo": "숲거미",
+      "nameEn": "Forest Spider",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 6,
+      "element": "dark",
+      "icon": "🕷️",
+      "stats": {
+        "hp": 60,
+        "attack": 12,
+        "defense": 3,
+        "speed": 12,
+        "physicalResist": {
+          "slashResist": 1.5,
+          "pierceResist": 1,
+          "crushResist": 1.5
+        },
+        "elementResist": {
+          "fire": 1.4,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 0.9,
+          "holy": 1.2,
+          "dark": 0.7
+        }
+      },
+      "rewards": {
+        "exp": 44,
+        "gold": 15
+      },
+      "drops": [
+        {
+          "itemId": "spider_silk",
+          "chance": 0.4,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "spider_venom",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "spawnCondition": {
+        "period": [
+          "night",
+          "dusk"
+        ]
+      },
+      "description": {
+        "ko": "어둠 속에 숨어 있는 거대한 거미. 불에 약하고 암흑에 강하다.",
+        "en": "A giant spider lurking in the darkness. Weak to fire, strong against dark."
+      },
+      "type": "insect",
+      "category": "spider"
+    },
+    {
+      "id": "venomous_spider",
+      "nameKo": "독거미",
+      "nameEn": "Venomous Spider",
+      "rank": "elite",
+      "alignment": "neutral",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 8,
+      "element": "dark",
+      "icon": "🕷️",
+      "stats": {
+        "hp": 80,
+        "attack": 18,
+        "defense": 5,
+        "speed": 14,
+        "physicalResist": {
+          "slashResist": 1.3,
+          "pierceResist": 0.9,
+          "crushResist": 1.3
+        },
+        "elementResist": {
+          "fire": 1.5,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 0.9,
+          "holy": 1.3,
+          "dark": 0.5
+        }
+      },
+      "rewards": {
+        "exp": 63,
+        "gold": 20
+      },
+      "drops": [
+        {
+          "itemId": "spider_silk",
+          "chance": 0.5,
+          "quantity": [
+            2,
+            4
+          ]
+        },
+        {
+          "itemId": "potent_venom",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "dark_essence",
+          "chance": 0.08,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "spawnCondition": {
+        "period": [
+          "night"
+        ]
+      },
+      "statusEffect": {
+        "type": "poison",
+        "chance": 0.3,
+        "duration": 3,
+        "damage": 5
+      },
+      "description": {
+        "ko": "치명적인 독을 가진 거미. 불에 매우 약하고 암흑에 매우 강하다.",
+        "en": "A spider with deadly venom. Very weak to fire, very strong against dark."
+      },
+      "type": "insect",
+      "category": "spider"
+    },
+    {
+      "id": "forest_wasp",
+      "nameKo": "숲말벌",
+      "nameEn": "Forest Wasp",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "forest_clearing"
+      ],
+      "level": 4,
+      "element": null,
+      "icon": "🐝",
+      "stats": {
+        "hp": 35,
+        "attack": 14,
+        "defense": 2,
+        "speed": 15,
+        "physicalResist": {
+          "slashResist": 1.3,
+          "pierceResist": 1,
+          "crushResist": 1.5
+        },
+        "elementResist": {
+          "fire": 1.5,
+          "ice": 0.8,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 27,
+        "gold": 10
+      },
+      "drops": [
+        {
+          "itemId": "wasp_stinger",
+          "chance": 0.25,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "wasp_honey",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "statusEffect": {
+        "type": "poison",
+        "chance": 0.2,
+        "duration": 2,
+        "damage": 3
+      },
+      "description": {
+        "ko": "공격적인 숲말벌. 불에 매우 약하고 냉기에 강하다.",
+        "en": "An aggressive forest wasp. Very weak to fire, resistant to ice."
+      },
+      "type": "insect",
+      "category": "wasp"
+    },
+    {
+      "id": "walking_shrub",
+      "nameKo": "걷는 관목",
+      "nameEn": "Walking Shrub",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "forest_clearing"
+      ],
+      "level": 3,
+      "element": "earth",
+      "icon": "🌿",
+      "stats": {
+        "hp": 40,
+        "attack": 7,
+        "defense": 5,
+        "speed": 4,
+        "physicalResist": {
+          "slashResist": 1.5,
+          "pierceResist": 1.3,
+          "crushResist": 1
+        },
+        "elementResist": {
+          "fire": 1.6,
+          "ice": 0.8,
+          "lightning": 1,
+          "earth": 0.5,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 19,
+        "gold": 8
+      },
+      "drops": [
+        {
+          "itemId": "plant_fiber",
+          "chance": 0.5,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "small_branch",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            2
+          ]
+        }
+      ],
+      "behavior": "defensive",
+      "description": {
+        "ko": "움직이는 작은 관목. 불에 매우 약하고 대지에 강하다.",
+        "en": "A small walking shrub. Very weak to fire, strong against earth."
+      },
+      "type": "plant",
+      "category": "treants"
+    },
+    {
+      "id": "vine_creeper",
+      "nameKo": "덩굴 괴물",
+      "nameEn": "Vine Creeper",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 6,
+      "element": "earth",
+      "icon": "🌱",
+      "stats": {
+        "hp": 55,
+        "attack": 14,
+        "defense": 4,
+        "speed": 7,
+        "physicalResist": {
+          "slashResist": 1.3,
+          "pierceResist": 1,
+          "crushResist": 0.9
+        },
+        "elementResist": {
+          "fire": 1.7,
+          "ice": 0.7,
+          "lightning": 1,
+          "earth": 0.5,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 44,
+        "gold": 15
+      },
+      "drops": [
+        {
+          "itemId": "thorny_vine",
+          "chance": 0.4,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "poison_thorn",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "earth_essence",
+          "chance": 0.08,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "statusEffect": {
+        "type": "bind",
+        "chance": 0.2,
+        "duration": 1
+      },
+      "description": {
+        "ko": "덩굴로 이루어진 괴물. 불에 매우 약하고 냉기/대지에 강하다.",
+        "en": "A monster made of vines. Very weak to fire, strong against ice/earth."
+      },
+      "type": "plant",
+      "category": "treants"
+    },
+    {
+      "id": "mushroom_man",
+      "nameKo": "버섯인간",
+      "nameEn": "Mushroom Man",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 7,
+      "element": "dark",
+      "icon": "🍄",
+      "stats": {
+        "hp": 65,
+        "attack": 12,
+        "defense": 8,
+        "speed": 5,
+        "physicalResist": {
+          "slashResist": 1,
+          "pierceResist": 1.2,
+          "crushResist": 0.8
+        },
+        "elementResist": {
+          "fire": 1.4,
+          "ice": 0.9,
+          "lightning": 1,
+          "earth": 0.6,
+          "holy": 1.2,
+          "dark": 0.7
+        }
+      },
+      "rewards": {
+        "exp": 53,
+        "gold": 18
+      },
+      "drops": [
+        {
+          "itemId": "strange_mushroom",
+          "chance": 0.5,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "spore_sac",
+          "chance": 0.25,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "hallucinogenic_powder",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "defensive",
+      "statusEffect": {
+        "type": "confusion",
+        "chance": 0.25,
+        "duration": 2
+      },
+      "spawnCondition": {
+        "period": [
+          "night",
+          "dusk"
+        ]
+      },
+      "description": {
+        "ko": "인간 형태의 거대한 버섯. 불에 약하고 암흑에 강하다.",
+        "en": "A giant mushroom in humanoid form. Weak to fire, strong against dark."
+      },
+      "type": "plant",
+      "category": "treants"
+    },
+    {
+      "id": "poison_flower",
+      "nameKo": "독꽃",
+      "nameEn": "Poison Flower",
+      "rank": "elite",
+      "alignment": "neutral",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 8,
+      "element": "dark",
+      "icon": "🌺",
+      "stats": {
+        "hp": 50,
+        "attack": 20,
+        "defense": 3,
+        "speed": 6,
+        "physicalResist": {
+          "slashResist": 1.5,
+          "pierceResist": 1.3,
+          "crushResist": 0.9
+        },
+        "elementResist": {
+          "fire": 1.5,
+          "ice": 0.8,
+          "lightning": 1,
+          "earth": 0.6,
+          "holy": 1.3,
+          "dark": 0.6
+        }
+      },
+      "rewards": {
+        "exp": 63,
+        "gold": 20
+      },
+      "drops": [
+        {
+          "itemId": "toxic_petal",
+          "chance": 0.4,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "poison_nectar",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "dark_essence",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "defensive",
+      "statusEffect": {
+        "type": "poison",
+        "chance": 0.4,
+        "duration": 4,
+        "damage": 6
+      },
+      "description": {
+        "ko": "아름답지만 치명적인 독을 품은 꽃. 불에 매우 약하고 암흑에 강하다.",
+        "en": "A beautiful but deadly poisonous flower. Very weak to fire, strong against dark."
+      },
+      "type": "plant",
+      "category": "treants"
+    },
+    {
+      "id": "young_treant",
+      "nameKo": "어린 트렌트",
+      "nameEn": "Young Treant",
+      "rank": "elite",
+      "alignment": "good",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 10,
+      "element": "earth",
+      "icon": "🌲",
+      "stats": {
+        "hp": 150,
+        "attack": 22,
+        "defense": 18,
+        "speed": 3,
+        "physicalResist": {
+          "slashResist": 1.8,
+          "pierceResist": 1.5,
+          "crushResist": 0.7
+        },
+        "elementResist": {
+          "fire": 2,
+          "ice": 0.6,
+          "lightning": 1,
+          "earth": 0.4,
+          "holy": 0.8,
+          "dark": 1.1
+        }
+      },
+      "rewards": {
+        "exp": 85,
+        "gold": 25
+      },
+      "drops": [
+        {
+          "itemId": "living_wood",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "treant_sap",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "earth_essence",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "nature_blessing",
+          "chance": 0.05,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "defensive",
+      "description": {
+        "ko": "숲의 수호자인 트렌트의 어린 개체. 불에 치명적으로 약하고 냉기/대지에 강하다. 공격하면 카르마가 크게 감소한다.",
+        "en": "A young treant, guardian of the forest. Critically weak to fire, strong against ice/earth. Attacking it greatly decreases karma."
+      },
+      "type": "plant",
+      "category": "treants"
+    },
+    {
+      "id": "forest_wisp",
+      "nameKo": "숲의 도깨비불",
+      "nameEn": "Forest Wisp",
+      "rank": "normal",
+      "alignment": "neutral",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 6,
+      "element": "holy",
+      "icon": "✨",
+      "stats": {
+        "hp": 40,
+        "attack": 14,
+        "defense": 2,
+        "speed": 14,
+        "physicalResist": {
+          "slashResist": 1.5,
+          "pierceResist": 1.5,
+          "crushResist": 1.5
+        },
+        "elementResist": {
+          "fire": 1.3,
+          "ice": 0.7,
+          "lightning": 1,
+          "earth": 0.8,
+          "holy": 0.6,
+          "dark": 1.5
+        }
+      },
+      "rewards": {
+        "exp": 44,
+        "gold": 15
+      },
+      "drops": [
+        {
+          "itemId": "wisp_essence",
+          "chance": 0.25,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "holy_essence",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "defensive",
+      "spawnCondition": {
+        "period": [
+          "night",
+          "dawn"
+        ]
+      },
+      "description": {
+        "ko": "숲 속을 떠도는 신비한 빛. 물리 공격에 강하고 불에 약하며 물/대지 마법에 강하다.",
+        "en": "A mysterious light wandering in the forest. Resistant to physical attacks, weak to fire, strong against water/earth."
+      },
+      "type": "spirit",
+      "category": "nature_spirits"
+    },
+    {
+      "id": "water_spirit",
+      "nameKo": "물의 정령",
+      "nameEn": "Water Spirit",
+      "rank": "normal",
+      "alignment": "good",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 7,
+      "element": "ice",
+      "icon": "💧",
+      "stats": {
+        "hp": 55,
+        "attack": 16,
+        "defense": 4,
+        "speed": 10,
+        "physicalResist": {
+          "slashResist": 1.3,
+          "pierceResist": 1.3,
+          "crushResist": 1
+        },
+        "elementResist": {
+          "fire": 1.5,
+          "ice": 0.3,
+          "lightning": 1.3,
+          "earth": 0.7,
+          "holy": 0.8,
+          "dark": 1.2
+        }
+      },
+      "rewards": {
+        "exp": 53,
+        "gold": 18
+      },
+      "drops": [
+        {
+          "itemId": "spirit_water",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "ice_essence",
+          "chance": 0.12,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "defensive",
+      "spawnCondition": {
+        "weather": [
+          "rainy"
+        ]
+      },
+      "description": {
+        "ko": "맑은 물에서 태어난 정령. 불에 매우 약하고 물/대지에 강하다. 비 오는 날에만 나타난다.",
+        "en": "A spirit born from clear water. Very weak to fire, strong against ice/earth. Only appears on rainy days."
+      },
+      "type": "spirit",
+      "category": "nature_spirits"
+    },
+    {
+      "id": "earth_spirit",
+      "nameKo": "대지의 정령",
+      "nameEn": "Earth Spirit",
+      "rank": "elite",
+      "alignment": "neutral",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 9,
+      "element": "earth",
+      "icon": "🪨",
+      "stats": {
+        "hp": 100,
+        "attack": 20,
+        "defense": 18,
+        "speed": 4,
+        "physicalResist": {
+          "slashResist": 0.6,
+          "pierceResist": 0.7,
+          "crushResist": 0.5
+        },
+        "elementResist": {
+          "fire": 0.9,
+          "ice": 0.8,
+          "lightning": 1.4,
+          "earth": 0.3,
+          "holy": 0.9,
+          "dark": 1.1
+        }
+      },
+      "rewards": {
+        "exp": 74,
+        "gold": 22
+      },
+      "drops": [
+        {
+          "itemId": "spirit_stone",
+          "chance": 0.35,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "earth_essence",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "ancient_soil",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "territorial",
+      "description": {
+        "ko": "대지의 힘을 담은 정령. 느리지만 매우 단단하다. 번개에 약하고 대지 마법에 매우 강하다.",
+        "en": "A spirit containing the power of earth. Slow but very sturdy. Weak to lightning, very strong against earth."
+      },
+      "type": "spirit",
+      "category": "nature_spirits"
+    },
+    {
+      "id": "ancient_spirit",
+      "nameKo": "고대 정령",
+      "nameEn": "Ancient Spirit",
+      "rank": "elite",
+      "alignment": "neutral",
+      "mapIds": [
+        "ancient_ruins"
+      ],
+      "level": 12,
+      "element": "holy",
+      "icon": "👻",
+      "stats": {
+        "hp": 85,
+        "attack": 25,
+        "defense": 8,
+        "speed": 12,
+        "physicalResist": {
+          "slashResist": 1.8,
+          "pierceResist": 1.8,
+          "crushResist": 1.8
+        },
+        "elementResist": {
+          "fire": 1,
+          "ice": 0.8,
+          "lightning": 0.9,
+          "earth": 0.7,
+          "holy": 0.5,
+          "dark": 1.5
+        }
+      },
+      "rewards": {
+        "exp": 109,
+        "gold": 30
+      },
+      "drops": [
+        {
+          "itemId": "ancient_essence",
+          "chance": 0.25,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "holy_essence",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "spirit_fragment",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            2
+          ]
+        }
+      ],
+      "behavior": "territorial",
+      "spawnCondition": {
+        "period": [
+          "night",
+          "dawn"
+        ]
+      },
+      "description": {
+        "ko": "유적을 지키는 고대의 정령. 물리 공격이 거의 통하지 않으며 암흑 마법에 약하다.",
+        "en": "An ancient spirit guarding the ruins. Nearly immune to physical attacks, weak to dark magic."
+      },
+      "type": "spirit",
+      "category": "nature_spirits"
+    },
+    {
+      "id": "wind_sprite",
+      "nameKo": "바람의 요정",
+      "nameEn": "Wind Sprite",
+      "rank": "normal",
+      "alignment": "good",
+      "mapIds": [
+        "forest_clearing"
+      ],
+      "level": 5,
+      "element": "lightning",
+      "icon": "🌬️",
+      "stats": {
+        "hp": 30,
+        "attack": 12,
+        "defense": 1,
+        "speed": 18,
+        "physicalResist": {
+          "slashResist": 1.4,
+          "pierceResist": 1.4,
+          "crushResist": 1.4
+        },
+        "elementResist": {
+          "fire": 1.1,
+          "ice": 0.8,
+          "lightning": 0.4,
+          "earth": 1.3,
+          "holy": 0.7,
+          "dark": 1.3
+        }
+      },
+      "rewards": {
+        "exp": 35,
+        "gold": 12
+      },
+      "drops": [
+        {
+          "itemId": "wind_essence",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "fairy_dust",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            2
+          ]
+        }
+      ],
+      "behavior": "passive",
+      "spawnCondition": {
+        "weather": [
+          "stormy"
+        ]
+      },
+      "description": {
+        "ko": "바람을 타고 다니는 작은 요정. 폭풍이 올 때 나타난다. 번개에 매우 강하고 대지에 약하다.",
+        "en": "A small fairy riding the wind. Appears when storms come. Very strong against lightning, weak to earth."
+      },
+      "type": "spirit",
+      "category": "nature_spirits"
+    },
+    {
+      "id": "forest_guardian",
+      "nameKo": "숲의 대정령",
+      "nameEn": "Forest Guardian",
+      "rank": "boss",
+      "alignment": "good",
+      "mapIds": [
+        "deep_forest"
+      ],
+      "level": 15,
+      "element": "earth",
+      "icon": "🌳",
+      "stats": {
+        "hp": 500,
+        "attack": 35,
+        "defense": 25,
+        "speed": 8,
+        "physicalResist": {
+          "slashResist": 1.2,
+          "pierceResist": 1.2,
+          "crushResist": 0.8
+        },
+        "elementResist": {
+          "fire": 1.8,
+          "ice": 0.5,
+          "lightning": 1,
+          "earth": 0.3,
+          "holy": 0.6,
+          "dark": 1.4
+        }
+      },
+      "rewards": {
+        "exp": 300,
+        "gold": 100
+      },
+      "drops": [
+        {
+          "itemId": "guardian_heart",
+          "chance": 0.5,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "ancient_bark",
+          "chance": 0.8,
+          "quantity": [
+            2,
+            4
+          ]
+        },
+        {
+          "itemId": "earth_essence",
+          "chance": 0.6,
+          "quantity": [
+            2,
+            3
+          ]
+        },
+        {
+          "itemId": "nature_blessing",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "forest_guardian_staff",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "territorial",
+      "abilities": [
+        {
+          "id": "nature_wrath",
+          "nameKo": "자연의 분노",
+          "nameEn": "Nature's Wrath",
+          "description": "대지의 힘으로 광역 피해",
+          "cooldown": 4
+        },
+        {
+          "id": "regeneration",
+          "nameKo": "재생",
+          "nameEn": "Regeneration",
+          "description": "매 턴 HP 20 회복",
+          "passive": true
+        },
+        {
+          "id": "summon_treants",
+          "nameKo": "트렌트 소환",
+          "nameEn": "Summon Treants",
+          "description": "HP 50% 이하 시 어린 트렌트 2마리 소환",
+          "trigger": "hp_below_50"
+        }
+      ],
+      "bossSchedule": "daily_noon",
+      "description": {
+        "ko": "깊은 숲을 수호하는 고대의 대정령. 불에 매우 약하지만 대지/냉기에 극도로 강하다. 공격하면 카르마가 크게 감소한다.",
+        "en": "An ancient great spirit guarding the deep forest. Very weak to fire but extremely strong against earth/ice. Attacking greatly decreases karma."
+      },
+      "type": "spirit",
+      "category": "nature_spirits"
+    },
+    {
+      "id": "skeleton_warrior",
+      "nameKo": "해골 전사",
+      "nameEn": "Skeleton Warrior",
+      "rank": "normal",
+      "alignment": "evil",
+      "mapIds": [
+        "ancient_ruins"
+      ],
+      "level": 10,
+      "element": "dark",
+      "icon": "💀",
+      "stats": {
+        "hp": 70,
+        "attack": 18,
+        "defense": 8,
+        "speed": 7,
+        "physicalResist": {
+          "slashResist": 1.3,
+          "pierceResist": 1.5,
+          "crushResist": 0.5
+        },
+        "elementResist": {
+          "fire": 0.9,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1.8,
+          "dark": 0.4
+        }
+      },
+      "rewards": {
+        "exp": 85,
+        "gold": 25
+      },
+      "drops": [
+        {
+          "itemId": "bone_fragment",
+          "chance": 0.5,
+          "quantity": [
+            2,
+            4
+          ]
+        },
+        {
+          "itemId": "old_sword",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "dark_essence",
+          "chance": 0.08,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "description": {
+        "ko": "되살아난 전사의 해골. 타격에 약하고, 신성 마법에 매우 약하다.",
+        "en": "A resurrected warrior's skeleton. Weak to crushing attacks and very weak to holy magic."
+      },
+      "type": "undead",
+      "category": "skeletons"
+    },
+    {
+      "id": "skeleton_archer",
+      "nameKo": "해골 궁수",
+      "nameEn": "Skeleton Archer",
+      "rank": "normal",
+      "alignment": "evil",
+      "mapIds": [
+        "ancient_ruins"
+      ],
+      "level": 11,
+      "element": "dark",
+      "icon": "🏹",
+      "stats": {
+        "hp": 55,
+        "attack": 22,
+        "defense": 5,
+        "speed": 9,
+        "physicalResist": {
+          "slashResist": 1.3,
+          "pierceResist": 1.5,
+          "crushResist": 0.5
+        },
+        "elementResist": {
+          "fire": 0.9,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1.8,
+          "dark": 0.4
+        }
+      },
+      "rewards": {
+        "exp": 97,
+        "gold": 28
+      },
+      "drops": [
+        {
+          "itemId": "bone_fragment",
+          "chance": 0.4,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "bone_arrow",
+          "chance": 0.5,
+          "quantity": [
+            5,
+            10
+          ]
+        },
+        {
+          "itemId": "cursed_bow",
+          "chance": 0.05,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "description": {
+        "ko": "원거리에서 저주받은 화살을 쏘는 해골 궁수. 신성 마법에 매우 약하다.",
+        "en": "A skeleton archer that shoots cursed arrows from a distance. Very weak to holy magic."
+      },
+      "type": "undead",
+      "category": "skeletons"
+    },
+    {
+      "id": "skeleton_mage",
+      "nameKo": "해골 마법사",
+      "nameEn": "Skeleton Mage",
+      "rank": "elite",
+      "alignment": "evil",
+      "mapIds": [
+        "ancient_ruins"
+      ],
+      "level": 13,
+      "element": "dark",
+      "icon": "🧙",
+      "stats": {
+        "hp": 65,
+        "attack": 28,
+        "defense": 4,
+        "speed": 8,
+        "physicalResist": {
+          "slashResist": 1.4,
+          "pierceResist": 1.5,
+          "crushResist": 0.6
+        },
+        "elementResist": {
+          "fire": 0.8,
+          "ice": 0.9,
+          "lightning": 0.9,
+          "earth": 1,
+          "holy": 2,
+          "dark": 0.3
+        }
+      },
+      "rewards": {
+        "exp": 122,
+        "gold": 32
+      },
+      "drops": [
+        {
+          "itemId": "bone_fragment",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "dark_scroll",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "skull_staff_fragment",
+          "chance": 0.08,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "dark_essence",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "description": {
+        "ko": "암흑 마법을 사용하는 해골 마법사. 신성 마법에 극도로 약하다.",
+        "en": "A skeleton mage using dark magic. Extremely weak to holy magic."
+      },
+      "type": "undead",
+      "category": "skeletons"
+    },
+    {
+      "id": "ghoul",
+      "nameKo": "구울",
+      "nameEn": "Ghoul",
+      "rank": "normal",
+      "alignment": "evil",
+      "mapIds": [
+        "ancient_ruins"
+      ],
+      "level": 11,
+      "element": "dark",
+      "icon": "🧟",
+      "stats": {
+        "hp": 90,
+        "attack": 20,
+        "defense": 6,
+        "speed": 6,
+        "physicalResist": {
+          "slashResist": 0.9,
+          "pierceResist": 1,
+          "crushResist": 0.8
+        },
+        "elementResist": {
+          "fire": 1.2,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1,
+          "holy": 1.6,
+          "dark": 0.5
+        }
+      },
+      "rewards": {
+        "exp": 97,
+        "gold": 28
+      },
+      "drops": [
+        {
+          "itemId": "rotting_flesh",
+          "chance": 0.4,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "ghoul_claw",
+          "chance": 0.25,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "dark_essence",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "statusEffect": {
+        "type": "paralysis",
+        "chance": 0.15,
+        "duration": 1
+      },
+      "description": {
+        "ko": "시체를 먹는 언데드. 물리면 마비될 수 있다. 화염에 약하고 신성 마법에 취약하다.",
+        "en": "An undead that eats corpses. Being bitten can cause paralysis. Weak to fire and holy magic."
+      },
+      "type": "undead",
+      "category": "skeletons"
+    },
+    {
+      "id": "wraith",
+      "nameKo": "망령",
+      "nameEn": "Wraith",
+      "rank": "elite",
+      "alignment": "evil",
+      "mapIds": [
+        "ancient_ruins"
+      ],
+      "level": 14,
+      "element": "dark",
+      "icon": "👤",
+      "stats": {
+        "hp": 75,
+        "attack": 30,
+        "defense": 3,
+        "speed": 13,
+        "physicalResist": {
+          "slashResist": 2,
+          "pierceResist": 2,
+          "crushResist": 2
+        },
+        "elementResist": {
+          "fire": 0.8,
+          "ice": 1,
+          "lightning": 1,
+          "earth": 1.2,
+          "holy": 2.5,
+          "dark": 0.2
+        }
+      },
+      "rewards": {
+        "exp": 136,
+        "gold": 35
+      },
+      "drops": [
+        {
+          "itemId": "wraith_essence",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "dark_essence",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "cursed_ring",
+          "chance": 0.05,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "spawnCondition": {
+        "period": [
+          "night"
+        ]
+      },
+      "statusEffect": {
+        "type": "curse",
+        "chance": 0.2,
+        "duration": 3,
+        "effect": "attack_down"
+      },
+      "description": {
+        "ko": "원한을 품고 죽은 영혼. 물리 공격이 거의 통하지 않지만 신성 마법에 치명적으로 약하다.",
+        "en": "A soul that died with resentment. Nearly immune to physical attacks but critically weak to holy magic."
+      },
+      "type": "undead",
+      "category": "skeletons"
+    },
+    {
+      "id": "cursed_scholar",
+      "nameKo": "저주받은 학자",
+      "nameEn": "Cursed Scholar",
+      "rank": "elite",
+      "alignment": "evil",
+      "mapIds": [
+        "ancient_ruins"
+      ],
+      "level": 15,
+      "element": "dark",
+      "icon": "📚",
+      "stats": {
+        "hp": 80,
+        "attack": 32,
+        "defense": 6,
+        "speed": 9,
+        "physicalResist": {
+          "slashResist": 1.5,
+          "pierceResist": 1.5,
+          "crushResist": 1
+        },
+        "elementResist": {
+          "fire": 0.9,
+          "ice": 0.9,
+          "lightning": 0.9,
+          "earth": 1,
+          "holy": 1.8,
+          "dark": 0.4
+        }
+      },
+      "rewards": {
+        "exp": 150,
+        "gold": 38
+      },
+      "drops": [
+        {
+          "itemId": "ancient_tome",
+          "chance": 0.2,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "forbidden_knowledge",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "dark_essence",
+          "chance": 0.25,
+          "quantity": [
+            1,
+            2
+          ]
+        },
+        {
+          "itemId": "scholar_robe",
+          "chance": 0.08,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "defensive",
+      "description": {
+        "ko": "금지된 지식을 탐구하다 저주받은 학자. 강력한 마법을 사용하지만 신성 마법에 취약하다.",
+        "en": "A scholar cursed while pursuing forbidden knowledge. Uses powerful magic but vulnerable to holy magic."
+      },
+      "type": "undead",
+      "category": "skeletons"
+    },
+    {
+      "id": "ancient_lich",
+      "nameKo": "고대 리치",
+      "nameEn": "Ancient Lich",
+      "rank": "boss",
+      "alignment": "evil",
+      "mapIds": [
+        "ancient_ruins"
+      ],
+      "level": 20,
+      "element": "dark",
+      "icon": "☠️",
+      "stats": {
+        "hp": 600,
+        "attack": 45,
+        "defense": 15,
+        "speed": 10,
+        "physicalResist": {
+          "slashResist": 1.8,
+          "pierceResist": 1.8,
+          "crushResist": 0.7
+        },
+        "elementResist": {
+          "fire": 0.7,
+          "ice": 0.8,
+          "lightning": 0.9,
+          "earth": 1,
+          "holy": 2.5,
+          "dark": 0.2
+        }
+      },
+      "rewards": {
+        "exp": 230,
+        "gold": 200
+      },
+      "drops": [
+        {
+          "itemId": "lich_phylactery",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "dark_essence",
+          "chance": 1,
+          "quantity": [
+            3,
+            5
+          ]
+        },
+        {
+          "itemId": "forbidden_tome",
+          "chance": 0.4,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "skull_staff",
+          "chance": 0.15,
+          "quantity": [
+            1,
+            1
+          ]
+        },
+        {
+          "itemId": "lich_robe",
+          "chance": 0.1,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "aggressive",
+      "abilities": [
+        {
+          "id": "dark_bolt",
+          "nameKo": "암흑 화살",
+          "nameEn": "Dark Bolt",
+          "description": "강력한 암흑 마법 공격",
+          "baseDamage": 40
+        },
+        {
+          "id": "life_drain",
+          "nameKo": "생명력 흡수",
+          "nameEn": "Life Drain",
+          "description": "적의 HP를 흡수하여 회복",
+          "cooldown": 3
+        },
+        {
+          "id": "summon_undead",
+          "nameKo": "언데드 소환",
+          "nameEn": "Summon Undead",
+          "description": "HP 70% 이하 시 해골 전사 2마리 소환",
+          "trigger": "hp_below_70"
+        },
+        {
+          "id": "phylactery_revival",
+          "nameKo": "필락테리 부활",
+          "nameEn": "Phylactery Revival",
+          "description": "첫 사망 시 HP 30%로 부활 (1회)",
+          "trigger": "on_death"
+        }
+      ],
+      "bossSchedule": "weekly_saturday",
+      "description": {
+        "ko": "고대 유적의 최종 지배자. 영생을 얻은 강력한 언데드 마법사. 신성 마법에 치명적으로 약하다.",
+        "en": "The final ruler of ancient ruins. A powerful undead mage who achieved immortality. Critically weak to holy magic."
+      },
+      "type": "undead",
+      "category": "skeletons"
+    }
+  ],
+  "summary": {
+    "total": 50,
+    "byType": {
+      "amorphous": 7,
+      "beast": 8,
+      "construct": 5,
+      "humanoid": 5,
+      "insect": 7,
+      "plant": 5,
+      "spirit": 6,
+      "undead": 7
+    },
+    "byCategory": {
+      "slime": 7,
+      "mammals": 8,
+      "armor": 1,
+      "golem": 2,
+      "scarecrow": 2,
+      "bandits": 5,
+      "ant": 2,
+      "beetle": 1,
+      "centipede": 1,
+      "spider": 2,
+      "wasp": 1,
+      "treants": 5,
+      "nature_spirits": 6,
+      "skeletons": 7
+    },
+    "byMapId": {
+      "swamp_entrance": 1,
+      "shallow_marsh": 4,
+      "slime_nest": 2,
+      "forest_entrance": 5,
+      "deep_forest": 17,
+      "forest_clearing": 4,
+      "ancient_ruins": 12,
+      "training_ground": 2,
+      "bandit_camp": 3
+    }
+  }
+}

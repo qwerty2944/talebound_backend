@@ -1,0 +1,122 @@
+{
+  "version": "1.0",
+  "maxLevel": 15,
+  "protectedUntil": 10,
+  "levels": [
+    {
+      "level": 1,
+      "successRate": 100,
+      "statMultiplier": 1.05,
+      "failPenalty": "none",
+      "goldCost": 100
+    },
+    {
+      "level": 2,
+      "successRate": 100,
+      "statMultiplier": 1.1,
+      "failPenalty": "none",
+      "goldCost": 200
+    },
+    {
+      "level": 3,
+      "successRate": 95,
+      "statMultiplier": 1.15,
+      "failPenalty": "none",
+      "goldCost": 500
+    },
+    {
+      "level": 4,
+      "successRate": 90,
+      "statMultiplier": 1.2,
+      "failPenalty": "none",
+      "goldCost": 1000
+    },
+    {
+      "level": 5,
+      "successRate": 80,
+      "statMultiplier": 1.3,
+      "failPenalty": "none",
+      "goldCost": 2000
+    },
+    {
+      "level": 6,
+      "successRate": 70,
+      "statMultiplier": 1.4,
+      "failPenalty": "downgrade",
+      "goldCost": 5000
+    },
+    {
+      "level": 7,
+      "successRate": 60,
+      "statMultiplier": 1.5,
+      "failPenalty": "downgrade",
+      "goldCost": 10000
+    },
+    {
+      "level": 8,
+      "successRate": 50,
+      "statMultiplier": 1.65,
+      "failPenalty": "downgrade",
+      "goldCost": 20000
+    },
+    {
+      "level": 9,
+      "successRate": 40,
+      "statMultiplier": 1.8,
+      "failPenalty": "downgrade",
+      "goldCost": 40000
+    },
+    {
+      "level": 10,
+      "successRate": 30,
+      "statMultiplier": 2.0,
+      "failPenalty": "downgrade",
+      "goldCost": 80000
+    },
+    {
+      "level": 11,
+      "successRate": 25,
+      "statMultiplier": 2.25,
+      "failPenalty": "destroy",
+      "goldCost": 150000,
+      "requiredMaterial": "enhancement_stone_high",
+      "requiredMaterialCount": 1
+    },
+    {
+      "level": 12,
+      "successRate": 20,
+      "statMultiplier": 2.5,
+      "failPenalty": "destroy",
+      "goldCost": 300000,
+      "requiredMaterial": "enhancement_stone_high",
+      "requiredMaterialCount": 2
+    },
+    {
+      "level": 13,
+      "successRate": 15,
+      "statMultiplier": 2.8,
+      "failPenalty": "destroy",
+      "goldCost": 500000,
+      "requiredMaterial": "enhancement_stone_high",
+      "requiredMaterialCount": 3
+    },
+    {
+      "level": 14,
+      "successRate": 10,
+      "statMultiplier": 3.2,
+      "failPenalty": "destroy",
+      "goldCost": 1000000,
+      "requiredMaterial": "enhancement_stone_high",
+      "requiredMaterialCount": 4
+    },
+    {
+      "level": 15,
+      "successRate": 5,
+      "statMultiplier": 4.0,
+      "failPenalty": "destroy",
+      "goldCost": 2000000,
+      "requiredMaterial": "enhancement_stone_high",
+      "requiredMaterialCount": 5
+    }
+  ]
+}

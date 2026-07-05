@@ -8,9 +8,11 @@ import { monitor } from "@colyseus/monitor";
 import { AppModule } from "./app.module.js";
 import { env } from "./config/env.js";
 import { ensureSchema } from "./database/pool.js";
+import { loadGameData } from "./game-data/game-data.js";
 import { MapRoom } from "./game/rooms/map.room.js";
 
 async function bootstrap() {
+  loadGameData();
   await ensureSchema();
 
   const app = await NestFactory.create<NestExpressApplication>(AppModule, {

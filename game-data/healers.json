@@ -1,0 +1,116 @@
+{
+  "type": "healer",
+  "description": "부상을 치료해주는 NPC",
+  "npcs": [
+    {
+      "id": "village_healer",
+      "nameKo": "마을 치료사 에린",
+      "nameEn": "Village Healer Erin",
+      "icon": "🏥",
+      "mapId": "starting_village",
+      "description": "상처와 부상을 치료해주는 마을의 치료사입니다.",
+      "dialogues": {
+        "greeting": "어서 오세요, 여행자님. 상처가 있으시군요. 제가 도와드릴게요.",
+        "noInjury": "건강해 보이시네요! 다른 용건이 있으신가요?",
+        "healSuccess": "치료가 완료되었습니다. 앞으로 조심하세요.",
+        "notEnoughGold": "금화가 부족하시군요... 다음에 다시 오세요.",
+        "farewell": "건강하세요!"
+      },
+      "services": {
+        "healing": {
+          "light": { "gold": 50, "description": "경상 치료" },
+          "medium": { "gold": 200, "description": "중상 치료" },
+          "critical": { "gold": 500, "description": "치명상 치료" }
+        }
+      }
+    },
+    {
+      "id": "market_healer",
+      "nameKo": "시장 약사 마르코",
+      "nameEn": "Market Apothecary Marco",
+      "icon": "💊",
+      "mapId": "market_square",
+      "description": "시장에서 약초와 치료 서비스를 제공하는 약사입니다.",
+      "dialogues": {
+        "greeting": "이런, 부상을 당하셨군요. 제 약이 도움이 될 겁니다.",
+        "noInjury": "오늘은 건강하시네요. 물약이라도 사가시겠습니까?",
+        "healSuccess": "자, 이제 괜찮으실 겁니다.",
+        "notEnoughGold": "흠, 금화가 부족하군요. 약초 채집이라도 해오시죠.",
+        "farewell": "다치지 마세요!"
+      },
+      "services": {
+        "healing": {
+          "light": { "gold": 45, "description": "경상 치료 (시장 할인)" },
+          "medium": { "gold": 180, "description": "중상 치료 (시장 할인)" },
+          "critical": { "gold": 450, "description": "치명상 치료 (시장 할인)" }
+        }
+      }
+    },
+    {
+      "id": "forest_herbalist",
+      "nameKo": "숲의 약초사 리나",
+      "nameEn": "Forest Herbalist Lina",
+      "icon": "🌿",
+      "mapId": "deep_forest",
+      "description": "숲 깊은 곳에 사는 약초 전문가입니다.",
+      "dialogues": {
+        "greeting": "숲이 당신을 이곳으로 이끌었군요. 상처를 보여주세요.",
+        "noInjury": "자연의 축복이 함께하고 있네요. 건강하시군요.",
+        "healSuccess": "자연의 힘으로 치료했어요. 숲에 감사하세요.",
+        "notEnoughGold": "금화가 부족해요... 대신 약초를 가져다 주시면 치료해드릴게요.",
+        "farewell": "자연이 당신을 지켜줄 거예요."
+      },
+      "services": {
+        "healing": {
+          "light": { "gold": 40, "description": "경상 치료 (숲 할인)" },
+          "medium": { "gold": 160, "description": "중상 치료 (숲 할인)" },
+          "critical": { "gold": 400, "description": "치명상 치료 (숲 할인)" }
+        }
+      }
+    },
+    {
+      "id": "arena_medic",
+      "nameKo": "투기장 의무병 브루투스",
+      "nameEn": "Arena Medic Brutus",
+      "icon": "⚔️",
+      "mapId": "arena",
+      "description": "투기장에서 부상당한 전사들을 치료하는 의무병입니다.",
+      "dialogues": {
+        "greeting": "또 싸움에서 다쳤군. 어디 보자...",
+        "noInjury": "멀쩡하잖아! 다음 시합 준비나 해.",
+        "healSuccess": "됐어. 이제 다시 싸울 수 있을 거야.",
+        "notEnoughGold": "금화 없이는 치료 안 해. 규칙이야.",
+        "farewell": "다음엔 피하는 법도 배워."
+      },
+      "services": {
+        "healing": {
+          "light": { "gold": 60, "description": "경상 치료 (투기장)" },
+          "medium": { "gold": 250, "description": "중상 치료 (투기장)" },
+          "critical": { "gold": 600, "description": "치명상 치료 (투기장)" }
+        }
+      }
+    },
+    {
+      "id": "ruins_shaman",
+      "nameKo": "유적의 주술사 카론",
+      "nameEn": "Ruins Shaman Charon",
+      "icon": "💀",
+      "mapId": "ancient_ruins",
+      "description": "고대 유적에서 어둠의 주술로 치료하는 신비한 존재입니다.",
+      "dialogues": {
+        "greeting": "크크크... 죽음의 문턱에서 돌아왔군. 내가 고쳐주지.",
+        "noInjury": "아직 멀쩡하군... 곧 다시 오게 될 거야.",
+        "healSuccess": "어둠이 너를 치유했다. 대가를 치렀으니.",
+        "notEnoughGold": "금화가 부족해... 영혼으로 대신 치르겠나?",
+        "farewell": "조심해. 여긴 위험한 곳이니까..."
+      },
+      "services": {
+        "healing": {
+          "light": { "gold": 30, "description": "경상 치료 (저렴)" },
+          "medium": { "gold": 120, "description": "중상 치료 (저렴)" },
+          "critical": { "gold": 300, "description": "치명상 치료 (저렴)" }
+        }
+      }
+    }
+  ]
+}

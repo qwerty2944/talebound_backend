@@ -1,0 +1,233 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-07-04T18:30:46.575Z",
+  "type": "misc",
+  "items": [
+    {
+      "id": "iron_key",
+      "nameKo": "철 열쇠",
+      "nameEn": "Iron Key",
+      "description": {
+        "ko": "일반적인 철 열쇠.",
+        "en": "일반적인 철 열쇠."
+      },
+      "icon": "key_iron",
+      "rarity": "common",
+      "stackSize": 10,
+      "value": 25,
+      "weight": 0.1,
+      "unlocks": [
+        "iron_chest"
+      ],
+      "type": "misc",
+      "subtype": "key",
+      "stackable": true
+    },
+    {
+      "id": "silver_key",
+      "nameKo": "은 열쇠",
+      "nameEn": "Silver Key",
+      "description": {
+        "ko": "은으로 만든 열쇠.",
+        "en": "은으로 만든 열쇠."
+      },
+      "icon": "key_silver",
+      "rarity": "grand",
+      "stackSize": 5,
+      "value": 100,
+      "weight": 0.1,
+      "unlocks": [
+        "silver_chest"
+      ],
+      "type": "misc",
+      "subtype": "key",
+      "stackable": true
+    },
+    {
+      "id": "gold_key",
+      "nameKo": "금 열쇠",
+      "nameEn": "Gold Key",
+      "description": {
+        "ko": "금으로 만든 열쇠.",
+        "en": "금으로 만든 열쇠."
+      },
+      "icon": "key_gold",
+      "rarity": "rare",
+      "stackSize": 3,
+      "value": 300,
+      "weight": 0.1,
+      "unlocks": [
+        "gold_chest"
+      ],
+      "type": "misc",
+      "subtype": "key",
+      "stackable": true
+    },
+    {
+      "id": "dungeon_key",
+      "nameKo": "던전 열쇠",
+      "nameEn": "Dungeon Key",
+      "description": {
+        "ko": "던전 문을 여는 열쇠.",
+        "en": "던전 문을 여는 열쇠."
+      },
+      "icon": "key_dungeon",
+      "rarity": "arcane",
+      "stackSize": 1,
+      "value": 500,
+      "weight": 0.2,
+      "unlocks": [
+        "dungeon_door"
+      ],
+      "type": "misc",
+      "subtype": "key",
+      "stackable": true
+    },
+    {
+      "id": "boss_key",
+      "nameKo": "보스 열쇠",
+      "nameEn": "Boss Key",
+      "description": {
+        "ko": "보스 방 문을 여는 열쇠.",
+        "en": "보스 방 문을 여는 열쇠."
+      },
+      "icon": "key_boss",
+      "rarity": "heroic",
+      "stackSize": 1,
+      "value": 1000,
+      "weight": 0.3,
+      "unlocks": [
+        "boss_room"
+      ],
+      "type": "misc",
+      "subtype": "key",
+      "stackable": true
+    },
+    {
+      "id": "master_key",
+      "nameKo": "마스터 키",
+      "nameEn": "Master Key",
+      "description": {
+        "ko": "대부분의 문을 열 수 있는 만능 열쇠.",
+        "en": "대부분의 문을 열 수 있는 만능 열쇠."
+      },
+      "icon": "key_master",
+      "rarity": "unique",
+      "stackSize": 1,
+      "value": 5000,
+      "weight": 0.15,
+      "unlocks": [
+        "all_chests",
+        "all_doors"
+      ],
+      "type": "misc",
+      "subtype": "key",
+      "stackable": true
+    },
+    {
+      "id": "old_letter",
+      "nameKo": "오래된 편지",
+      "nameEn": "Old Letter",
+      "description": {
+        "ko": "누렇게 바랜 오래된 편지. 읽을 수 있을지도 모른다.",
+        "en": "누렇게 바랜 오래된 편지. 읽을 수 있을지도 모른다."
+      },
+      "icon": "quest_letter",
+      "rarity": "common",
+      "stackSize": 1,
+      "value": 0,
+      "weight": 0.01,
+      "questId": "village_mystery",
+      "type": "misc",
+      "subtype": "quest",
+      "stackable": true
+    },
+    {
+      "id": "ancient_key",
+      "nameKo": "고대의 열쇠",
+      "nameEn": "Ancient Key",
+      "description": {
+        "ko": "고대 유적의 어딘가를 열 수 있을 것 같다.",
+        "en": "고대 유적의 어딘가를 열 수 있을 것 같다."
+      },
+      "icon": "quest_key",
+      "rarity": "rare",
+      "stackSize": 1,
+      "value": 0,
+      "weight": 0.1,
+      "questId": "ancient_ruins",
+      "type": "misc",
+      "subtype": "quest",
+      "stackable": true
+    },
+    {
+      "id": "village_chief_seal",
+      "nameKo": "촌장의 인장",
+      "nameEn": "Village Chief's Seal",
+      "description": {
+        "ko": "시작 마을 촌장의 인장. 신분을 증명할 수 있다.",
+        "en": "시작 마을 촌장의 인장. 신분을 증명할 수 있다."
+      },
+      "icon": "quest_seal",
+      "rarity": "grand",
+      "stackSize": 1,
+      "value": 0,
+      "weight": 0.05,
+      "questId": "main_quest_1",
+      "type": "misc",
+      "subtype": "quest",
+      "stackable": true
+    },
+    {
+      "id": "mysterious_orb",
+      "nameKo": "수상한 구슬",
+      "nameEn": "Mysterious Orb",
+      "description": {
+        "ko": "이상한 빛을 내는 구슬. 누군가에게 보여줘야 할 것 같다.",
+        "en": "이상한 빛을 내는 구슬. 누군가에게 보여줘야 할 것 같다."
+      },
+      "icon": "quest_orb",
+      "rarity": "arcane",
+      "stackSize": 1,
+      "value": 0,
+      "weight": 0.2,
+      "questId": "magic_academy",
+      "type": "misc",
+      "subtype": "quest",
+      "stackable": true
+    },
+    {
+      "id": "dragon_tooth",
+      "nameKo": "드래곤의 이빨",
+      "nameEn": "Dragon's Tooth",
+      "description": {
+        "ko": "드래곤을 처치한 증거. 왕에게 가져가야 한다.",
+        "en": "드래곤을 처치한 증거. 왕에게 가져가야 한다."
+      },
+      "icon": "quest_dragon",
+      "rarity": "unique",
+      "stackSize": 1,
+      "value": 0,
+      "weight": 0.5,
+      "questId": "dragon_slayer",
+      "type": "misc",
+      "subtype": "quest",
+      "stackable": true
+    }
+  ],
+  "summary": {
+    "total": 11,
+    "bySubtype": {
+      "key": 6,
+      "quest": 5
+    },
+    "byRarity": {
+      "common": 2,
+      "grand": 2,
+      "rare": 2,
+      "arcane": 2,
+      "heroic": 1,
+      "unique": 2
+    }
+  }
+}

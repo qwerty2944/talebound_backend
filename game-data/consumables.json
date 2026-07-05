@@ -1,0 +1,863 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-07-04T18:30:46.573Z",
+  "type": "consumable",
+  "items": [
+    {
+      "id": "bread",
+      "nameKo": "빵",
+      "nameEn": "Bread",
+      "description": {
+        "ko": "평범한 밀빵. 체력을 10 회복한다.",
+        "en": "평범한 밀빵. 체력을 10 회복한다."
+      },
+      "type": "consumable",
+      "subtype": "food",
+      "rarity": "crude",
+      "value": 5,
+      "weight": 0.2,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "food_bread",
+      "effect": {
+        "type": "heal_hp",
+        "value": 10
+      }
+    },
+    {
+      "id": "cheese",
+      "nameKo": "치즈",
+      "nameEn": "Cheese",
+      "description": {
+        "ko": "숙성된 치즈 조각. 체력을 15 회복한다.",
+        "en": "숙성된 치즈 조각. 체력을 15 회복한다."
+      },
+      "type": "consumable",
+      "subtype": "food",
+      "rarity": "common",
+      "value": 10,
+      "weight": 0.2,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "food_cheese",
+      "effect": {
+        "type": "heal_hp",
+        "value": 15
+      }
+    },
+    {
+      "id": "apple",
+      "nameKo": "사과",
+      "nameEn": "Apple",
+      "description": {
+        "ko": "싱싱한 사과. 체력을 12 회복한다.",
+        "en": "싱싱한 사과. 체력을 12 회복한다."
+      },
+      "type": "consumable",
+      "subtype": "food",
+      "rarity": "common",
+      "value": 8,
+      "weight": 0.1,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "food_apple",
+      "effect": {
+        "type": "heal_hp",
+        "value": 12
+      }
+    },
+    {
+      "id": "meat_raw",
+      "nameKo": "생고기",
+      "nameEn": "Raw Meat",
+      "description": {
+        "ko": "날것의 고기. 요리해서 먹어야 한다.",
+        "en": "날것의 고기. 요리해서 먹어야 한다."
+      },
+      "type": "consumable",
+      "subtype": "food",
+      "rarity": "common",
+      "value": 15,
+      "weight": 0.5,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "food_meat_raw",
+      "effect": {
+        "type": "heal_hp",
+        "value": 5,
+        "sideEffect": {
+          "type": "status",
+          "status": "food_poisoning",
+          "chance": 30
+        }
+      }
+    },
+    {
+      "id": "meat_cooked",
+      "nameKo": "구운 고기",
+      "nameEn": "Cooked Meat",
+      "description": {
+        "ko": "잘 구워진 고기. 체력을 40 회복한다.",
+        "en": "잘 구워진 고기. 체력을 40 회복한다."
+      },
+      "type": "consumable",
+      "subtype": "food",
+      "rarity": "grand",
+      "value": 35,
+      "weight": 0.4,
+      "stackable": true,
+      "stackSize": 15,
+      "icon": "food_meat_cooked",
+      "effect": {
+        "type": "heal_hp",
+        "value": 40
+      }
+    },
+    {
+      "id": "fish_grilled",
+      "nameKo": "구운 생선",
+      "nameEn": "Grilled Fish",
+      "description": {
+        "ko": "바삭하게 구운 생선. 체력 25, 마나 10 회복.",
+        "en": "바삭하게 구운 생선. 체력 25, 마나 10 회복."
+      },
+      "type": "consumable",
+      "subtype": "food",
+      "rarity": "grand",
+      "value": 30,
+      "weight": 0.3,
+      "stackable": true,
+      "stackSize": 15,
+      "icon": "food_fish",
+      "effect": {
+        "type": "heal_both",
+        "hp": 25,
+        "mp": 10
+      }
+    },
+    {
+      "id": "stew",
+      "nameKo": "스튜",
+      "nameEn": "Stew",
+      "description": {
+        "ko": "따뜻한 고기 스튜. 체력을 60 회복하고 3턴간 회복력 증가.",
+        "en": "따뜻한 고기 스튜. 체력을 60 회복하고 3턴간 회복력 증가."
+      },
+      "type": "consumable",
+      "subtype": "food",
+      "rarity": "rare",
+      "value": 80,
+      "weight": 0.6,
+      "stackable": true,
+      "stackSize": 10,
+      "icon": "food_stew",
+      "effect": {
+        "type": "heal_hp",
+        "value": 60,
+        "buff": {
+          "type": "regen",
+          "value": 5,
+          "duration": 3
+        }
+      }
+    },
+    {
+      "id": "royal_feast",
+      "nameKo": "왕실 만찬",
+      "nameEn": "Royal Feast",
+      "description": {
+        "ko": "왕실 요리사가 만든 최고급 요리. 모든 스탯 +3, 5턴 지속.",
+        "en": "왕실 요리사가 만든 최고급 요리. 모든 스탯 +3, 5턴 지속."
+      },
+      "type": "consumable",
+      "subtype": "food",
+      "rarity": "heroic",
+      "value": 500,
+      "weight": 1,
+      "stackable": true,
+      "stackSize": 5,
+      "icon": "food_feast",
+      "effect": {
+        "type": "buff_all",
+        "value": 3,
+        "duration": 5
+      }
+    },
+    {
+      "id": "ale",
+      "nameKo": "에일",
+      "nameEn": "Ale",
+      "description": {
+        "ko": "거품이 넘치는 맥주. STR +2, DEX -1, 3턴 지속.",
+        "en": "거품이 넘치는 맥주. STR +2, DEX -1, 3턴 지속."
+      },
+      "type": "consumable",
+      "subtype": "food",
+      "rarity": "common",
+      "value": 12,
+      "weight": 0.3,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "drink_ale",
+      "effect": {
+        "type": "buff_debuff",
+        "buffs": [
+          {
+            "stat": "str",
+            "value": 2
+          }
+        ],
+        "debuffs": [
+          {
+            "stat": "dex",
+            "value": 1
+          }
+        ],
+        "duration": 3
+      }
+    },
+    {
+      "id": "wine",
+      "nameKo": "와인",
+      "nameEn": "Wine",
+      "description": {
+        "ko": "숙성된 포도주. CHA +3, 3턴 지속.",
+        "en": "숙성된 포도주. CHA +3, 3턴 지속."
+      },
+      "type": "consumable",
+      "subtype": "food",
+      "rarity": "grand",
+      "value": 50,
+      "weight": 0.4,
+      "stackable": true,
+      "stackSize": 15,
+      "icon": "drink_wine",
+      "effect": {
+        "type": "buff",
+        "stat": "cha",
+        "value": 3,
+        "duration": 3
+      }
+    },
+    {
+      "id": "inscription_fireball_1",
+      "nameKo": "화염구 각인 I",
+      "nameEn": "Fireball Inscription I",
+      "description": {
+        "ko": "소켓에 장착하면 화염구 스킬을 사용할 수 있다.",
+        "en": "소켓에 장착하면 화염구 스킬을 사용할 수 있다."
+      },
+      "type": "consumable",
+      "subtype": "socketable",
+      "rarity": "rare",
+      "value": 1000,
+      "weight": 0.05,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "inscription_fire"
+    },
+    {
+      "id": "inscription_heal_1",
+      "nameKo": "치유 각인 I",
+      "nameEn": "Heal Inscription I",
+      "description": {
+        "ko": "소켓에 장착하면 치유 스킬을 사용할 수 있다.",
+        "en": "소켓에 장착하면 치유 스킬을 사용할 수 있다."
+      },
+      "type": "consumable",
+      "subtype": "socketable",
+      "rarity": "rare",
+      "value": 1500,
+      "weight": 0.05,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "inscription_heal"
+    },
+    {
+      "id": "inscription_lightning_1",
+      "nameKo": "번개 각인 I",
+      "nameEn": "Lightning Inscription I",
+      "description": {
+        "ko": "소켓에 장착하면 번개 스킬을 사용할 수 있다.",
+        "en": "소켓에 장착하면 번개 스킬을 사용할 수 있다."
+      },
+      "type": "consumable",
+      "subtype": "socketable",
+      "rarity": "rare",
+      "value": 1200,
+      "weight": 0.05,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "inscription_lightning"
+    },
+    {
+      "id": "inscription_shield_1",
+      "nameKo": "보호막 각인 I",
+      "nameEn": "Shield Inscription I",
+      "description": {
+        "ko": "소켓에 장착하면 보호막 스킬을 사용할 수 있다.",
+        "en": "소켓에 장착하면 보호막 스킬을 사용할 수 있다."
+      },
+      "type": "consumable",
+      "subtype": "socketable",
+      "rarity": "arcane",
+      "value": 2000,
+      "weight": 0.05,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "inscription_shield"
+    },
+    {
+      "id": "inscription_teleport",
+      "nameKo": "순간이동 각인",
+      "nameEn": "Teleport Inscription",
+      "description": {
+        "ko": "소켓에 장착하면 순간이동 스킬을 사용할 수 있다.",
+        "en": "소켓에 장착하면 순간이동 스킬을 사용할 수 있다."
+      },
+      "type": "consumable",
+      "subtype": "socketable",
+      "rarity": "heroic",
+      "value": 5000,
+      "weight": 0.05,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "inscription_teleport"
+    },
+    {
+      "id": "inscription_berserk",
+      "nameKo": "광전사 각인",
+      "nameEn": "Berserk Inscription",
+      "description": {
+        "ko": "소켓에 장착하면 광전사 스킬을 사용할 수 있다.",
+        "en": "소켓에 장착하면 광전사 스킬을 사용할 수 있다."
+      },
+      "type": "consumable",
+      "subtype": "socketable",
+      "rarity": "heroic",
+      "value": 4000,
+      "weight": 0.05,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "inscription_rage"
+    },
+    {
+      "id": "health_potion_small",
+      "nameKo": "소형 체력 포션",
+      "nameEn": "Small Health Potion",
+      "description": {
+        "ko": "붉은 액체가 담긴 작은 유리병. 체력을 30 회복한다.",
+        "en": "붉은 액체가 담긴 작은 유리병. 체력을 30 회복한다."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "common",
+      "value": 25,
+      "weight": 0.3,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "potion_red_small",
+      "effect": {
+        "type": "heal_hp",
+        "value": 30
+      }
+    },
+    {
+      "id": "health_potion_medium",
+      "nameKo": "중형 체력 포션",
+      "nameEn": "Medium Health Potion",
+      "description": {
+        "ko": "진한 붉은 액체가 담긴 유리병. 체력을 70 회복한다.",
+        "en": "진한 붉은 액체가 담긴 유리병. 체력을 70 회복한다."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "grand",
+      "value": 75,
+      "weight": 0.5,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "potion_red_medium",
+      "effect": {
+        "type": "heal_hp",
+        "value": 70
+      }
+    },
+    {
+      "id": "health_potion_large",
+      "nameKo": "대형 체력 포션",
+      "nameEn": "Large Health Potion",
+      "description": {
+        "ko": "순수한 붉은빛이 맥동하는 대형 유리병. 체력을 150 회복한다.",
+        "en": "순수한 붉은빛이 맥동하는 대형 유리병. 체력을 150 회복한다."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "rare",
+      "value": 200,
+      "weight": 0.8,
+      "stackable": true,
+      "stackSize": 15,
+      "icon": "potion_red_large",
+      "effect": {
+        "type": "heal_hp",
+        "value": 150
+      }
+    },
+    {
+      "id": "mana_potion_small",
+      "nameKo": "소형 마나 포션",
+      "nameEn": "Small Mana Potion",
+      "description": {
+        "ko": "파란 액체가 담긴 작은 유리병. 마나를 20 회복한다.",
+        "en": "파란 액체가 담긴 작은 유리병. 마나를 20 회복한다."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "common",
+      "value": 30,
+      "weight": 0.3,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "potion_blue_small",
+      "effect": {
+        "type": "heal_mp",
+        "value": 20
+      }
+    },
+    {
+      "id": "mana_potion_medium",
+      "nameKo": "중형 마나 포션",
+      "nameEn": "Medium Mana Potion",
+      "description": {
+        "ko": "진한 푸른 액체가 담긴 유리병. 마나를 50 회복한다.",
+        "en": "진한 푸른 액체가 담긴 유리병. 마나를 50 회복한다."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "grand",
+      "value": 90,
+      "weight": 0.5,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "potion_blue_medium",
+      "effect": {
+        "type": "heal_mp",
+        "value": 50
+      }
+    },
+    {
+      "id": "mana_potion_large",
+      "nameKo": "대형 마나 포션",
+      "nameEn": "Large Mana Potion",
+      "description": {
+        "ko": "심해처럼 깊은 푸른빛의 대형 유리병. 마나를 100 회복한다.",
+        "en": "심해처럼 깊은 푸른빛의 대형 유리병. 마나를 100 회복한다."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "rare",
+      "value": 250,
+      "weight": 0.8,
+      "stackable": true,
+      "stackSize": 15,
+      "icon": "potion_blue_large",
+      "effect": {
+        "type": "heal_mp",
+        "value": 100
+      }
+    },
+    {
+      "id": "stamina_potion",
+      "nameKo": "피로 회복제",
+      "nameEn": "Stamina Potion",
+      "description": {
+        "ko": "노란 액체가 담긴 유리병. 피로도를 30 회복한다.",
+        "en": "노란 액체가 담긴 유리병. 피로도를 30 회복한다."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "grand",
+      "value": 100,
+      "weight": 0.4,
+      "stackable": true,
+      "stackSize": 10,
+      "icon": "potion_yellow",
+      "effect": {
+        "type": "heal_stamina",
+        "value": 30
+      }
+    },
+    {
+      "id": "antidote",
+      "nameKo": "해독제",
+      "nameEn": "Antidote",
+      "description": {
+        "ko": "연두색 액체가 담긴 유리병. 독 상태를 해제한다.",
+        "en": "연두색 액체가 담긴 유리병. 독 상태를 해제한다."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "common",
+      "value": 40,
+      "weight": 0.3,
+      "stackable": true,
+      "stackSize": 20,
+      "icon": "potion_green",
+      "effect": {
+        "type": "cure_status",
+        "status": "poison"
+      }
+    },
+    {
+      "id": "elixir",
+      "nameKo": "엘릭서",
+      "nameEn": "Elixir",
+      "description": {
+        "ko": "황금빛이 도는 신비로운 약. HP와 MP를 모두 완전 회복한다.",
+        "en": "황금빛이 도는 신비로운 약. HP와 MP를 모두 완전 회복한다."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "heroic",
+      "value": 1000,
+      "weight": 0.5,
+      "stackable": true,
+      "stackSize": 5,
+      "icon": "potion_gold",
+      "effect": {
+        "type": "full_restore"
+      }
+    },
+    {
+      "id": "strength_potion",
+      "nameKo": "힘의 물약",
+      "nameEn": "Strength Potion",
+      "description": {
+        "ko": "붉은 기운이 감도는 물약. 5턴간 STR +5.",
+        "en": "붉은 기운이 감도는 물약. 5턴간 STR +5."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "rare",
+      "value": 150,
+      "weight": 0.4,
+      "stackable": true,
+      "stackSize": 10,
+      "icon": "potion_str",
+      "effect": {
+        "type": "buff",
+        "stat": "str",
+        "value": 5,
+        "duration": 5
+      }
+    },
+    {
+      "id": "agility_potion",
+      "nameKo": "민첩의 물약",
+      "nameEn": "Agility Potion",
+      "description": {
+        "ko": "녹색 기운이 감도는 물약. 5턴간 DEX +5.",
+        "en": "녹색 기운이 감도는 물약. 5턴간 DEX +5."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "rare",
+      "value": 150,
+      "weight": 0.4,
+      "stackable": true,
+      "stackSize": 10,
+      "icon": "potion_dex",
+      "effect": {
+        "type": "buff",
+        "stat": "dex",
+        "value": 5,
+        "duration": 5
+      }
+    },
+    {
+      "id": "intelligence_potion",
+      "nameKo": "지능의 물약",
+      "nameEn": "Intelligence Potion",
+      "description": {
+        "ko": "보라색 기운이 감도는 물약. 5턴간 INT +5.",
+        "en": "보라색 기운이 감도는 물약. 5턴간 INT +5."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "rare",
+      "value": 150,
+      "weight": 0.4,
+      "stackable": true,
+      "stackSize": 10,
+      "icon": "potion_int",
+      "effect": {
+        "type": "buff",
+        "stat": "int",
+        "value": 5,
+        "duration": 5
+      }
+    },
+    {
+      "id": "stealth_potion_small",
+      "nameKo": "소형 은신 물약",
+      "nameEn": "Small Stealth Potion",
+      "description": {
+        "ko": "어둠의 정수가 담긴 작은 유리병. 2턴간 은신 상태가 된다.",
+        "en": "어둠의 정수가 담긴 작은 유리병. 2턴간 은신 상태가 된다."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "rare",
+      "value": 200,
+      "weight": 0.3,
+      "stackable": true,
+      "stackSize": 10,
+      "icon": "potion_shadow_small",
+      "effect": {
+        "type": "apply_status",
+        "status": "stealth",
+        "duration": 2
+      }
+    },
+    {
+      "id": "stealth_potion_medium",
+      "nameKo": "중형 은신 물약",
+      "nameEn": "Medium Stealth Potion",
+      "description": {
+        "ko": "응축된 어둠의 정수가 담긴 유리병. 3턴간 은신 상태가 된다.",
+        "en": "응축된 어둠의 정수가 담긴 유리병. 3턴간 은신 상태가 된다."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "arcane",
+      "value": 500,
+      "weight": 0.5,
+      "stackable": true,
+      "stackSize": 10,
+      "icon": "potion_shadow_medium",
+      "effect": {
+        "type": "apply_status",
+        "status": "stealth",
+        "duration": 3
+      }
+    },
+    {
+      "id": "stealth_potion_large",
+      "nameKo": "대형 은신 물약",
+      "nameEn": "Large Stealth Potion",
+      "description": {
+        "ko": "순수한 암흑의 정수가 담긴 대형 유리병. 4턴간 은신 상태가 된다.",
+        "en": "순수한 암흑의 정수가 담긴 대형 유리병. 4턴간 은신 상태가 된다."
+      },
+      "type": "consumable",
+      "subtype": "potion",
+      "rarity": "heroic",
+      "value": 1200,
+      "weight": 0.8,
+      "stackable": true,
+      "stackSize": 5,
+      "icon": "potion_shadow_large",
+      "effect": {
+        "type": "apply_status",
+        "status": "stealth",
+        "duration": 4
+      }
+    },
+    {
+      "id": "scroll_teleport_village",
+      "nameKo": "마을 귀환 주문서",
+      "nameEn": "Village Teleport Scroll",
+      "description": {
+        "ko": "시작 마을로 즉시 이동한다.",
+        "en": "시작 마을로 즉시 이동한다."
+      },
+      "type": "consumable",
+      "subtype": "scroll",
+      "rarity": "common",
+      "value": 50,
+      "weight": 0.1,
+      "stackable": true,
+      "stackSize": 10,
+      "icon": "scroll_blue",
+      "effect": {
+        "type": "teleport",
+        "destination": "starting_village"
+      }
+    },
+    {
+      "id": "scroll_identify",
+      "nameKo": "감정 주문서",
+      "nameEn": "Identification Scroll",
+      "description": {
+        "ko": "미확인 아이템의 정체를 밝힌다.",
+        "en": "미확인 아이템의 정체를 밝힌다."
+      },
+      "type": "consumable",
+      "subtype": "scroll",
+      "rarity": "grand",
+      "value": 100,
+      "weight": 0.1,
+      "stackable": true,
+      "stackSize": 10,
+      "icon": "scroll_yellow",
+      "effect": {
+        "type": "identify"
+      }
+    },
+    {
+      "id": "scroll_fireball",
+      "nameKo": "화염구 주문서",
+      "nameEn": "Fireball Scroll",
+      "description": {
+        "ko": "강력한 화염구를 발사한다. 80 화염 피해.",
+        "en": "강력한 화염구를 발사한다. 80 화염 피해."
+      },
+      "type": "consumable",
+      "subtype": "scroll",
+      "rarity": "rare",
+      "value": 200,
+      "weight": 0.1,
+      "stackable": true,
+      "stackSize": 5,
+      "icon": "scroll_red",
+      "effect": {
+        "type": "spell",
+        "spellId": "fireball",
+        "damage": 80,
+        "element": "fire"
+      }
+    },
+    {
+      "id": "scroll_lightning",
+      "nameKo": "번개 주문서",
+      "nameEn": "Lightning Scroll",
+      "description": {
+        "ko": "번개를 내리쳐 60 번개 피해를 입힌다.",
+        "en": "번개를 내리쳐 60 번개 피해를 입힌다."
+      },
+      "type": "consumable",
+      "subtype": "scroll",
+      "rarity": "rare",
+      "value": 180,
+      "weight": 0.1,
+      "stackable": true,
+      "stackSize": 5,
+      "icon": "scroll_purple",
+      "effect": {
+        "type": "spell",
+        "spellId": "lightning_bolt",
+        "damage": 60,
+        "element": "lightning"
+      }
+    },
+    {
+      "id": "scroll_protection",
+      "nameKo": "보호 주문서",
+      "nameEn": "Protection Scroll",
+      "description": {
+        "ko": "5턴간 받는 피해 20% 감소.",
+        "en": "5턴간 받는 피해 20% 감소."
+      },
+      "type": "consumable",
+      "subtype": "scroll",
+      "rarity": "rare",
+      "value": 250,
+      "weight": 0.1,
+      "stackable": true,
+      "stackSize": 5,
+      "icon": "scroll_white",
+      "effect": {
+        "type": "buff",
+        "buffType": "damage_reduction",
+        "value": 20,
+        "duration": 5
+      }
+    },
+    {
+      "id": "scroll_enchant_weapon",
+      "nameKo": "무기 강화 주문서",
+      "nameEn": "Weapon Enchant Scroll",
+      "description": {
+        "ko": "무기의 공격력을 영구적으로 +1 강화한다.",
+        "en": "무기의 공격력을 영구적으로 +1 강화한다."
+      },
+      "type": "consumable",
+      "subtype": "scroll",
+      "rarity": "heroic",
+      "value": 1000,
+      "weight": 0.1,
+      "stackable": true,
+      "stackSize": 3,
+      "icon": "scroll_gold",
+      "effect": {
+        "type": "enchant",
+        "target": "weapon",
+        "stat": "damage",
+        "value": 1
+      }
+    },
+    {
+      "id": "scroll_enchant_armor",
+      "nameKo": "방어구 강화 주문서",
+      "nameEn": "Armor Enchant Scroll",
+      "description": {
+        "ko": "방어구의 방어력을 영구적으로 +1 강화한다.",
+        "en": "방어구의 방어력을 영구적으로 +1 강화한다."
+      },
+      "type": "consumable",
+      "subtype": "scroll",
+      "rarity": "heroic",
+      "value": 1000,
+      "weight": 0.1,
+      "stackable": true,
+      "stackSize": 3,
+      "icon": "scroll_silver",
+      "effect": {
+        "type": "enchant",
+        "target": "armor",
+        "stat": "defense",
+        "value": 1
+      }
+    },
+    {
+      "id": "scroll_resurrection",
+      "nameKo": "부활 주문서",
+      "nameEn": "Resurrection Scroll",
+      "description": {
+        "ko": "사망 시 자동으로 HP 50%로 부활한다. 전투 중 소지시 효과 발동.",
+        "en": "사망 시 자동으로 HP 50%로 부활한다. 전투 중 소지시 효과 발동."
+      },
+      "type": "consumable",
+      "subtype": "scroll",
+      "rarity": "unique",
+      "value": 5000,
+      "weight": 0.1,
+      "stackable": true,
+      "stackSize": 1,
+      "icon": "scroll_divine",
+      "effect": {
+        "type": "auto_resurrect",
+        "hpPercent": 50
+      }
+    }
+  ],
+  "summary": {
+    "total": 39,
+    "bySubtype": {
+      "food": 10,
+      "socketable": 6,
+      "potion": 15,
+      "scroll": 8
+    },
+    "byRarity": {
+      "crude": 1,
+      "common": 8,
+      "grand": 7,
+      "rare": 13,
+      "heroic": 7,
+      "arcane": 2,
+      "unique": 1
+    }
+  }
+}
