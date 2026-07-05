@@ -28,7 +28,8 @@ function dedupePm2Processes(): void {
     }>;
     const twins = list.filter((p) => p.name === myName).map((p) => p.pm_id).sort((a, b) => a - b);
     if (twins.length <= 1) return;
-    const survivor = twins[0];
+    // 플랫폼 배포는 새 프로세스 기동 → 구 프로세스 제거 순서이므로 "최신(pm_id 최대)"이 생존해야 한다
+    const survivor = twins[twins.length - 1];
     if (myPmId !== survivor) {
       console.warn(`[pm2-dedupe] 중복 프로세스 감지 — 본인(pm_id=${myPmId}) 종료, 생존자 pm_id=${survivor}`);
       execSync(`pm2 delete ${myPmId}`, { timeout: 10_000 });
