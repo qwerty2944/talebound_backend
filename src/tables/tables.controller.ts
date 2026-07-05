@@ -23,16 +23,18 @@ import { JwtAuthGuard } from "../auth/jwt-auth.guard.js";
  */
 
 // 업데이트 허용 컬럼 (본인 row 한정)
-// level/experience/gold/gems는 서버 권위(battle/complete, npc/heal 등)로만 변경 가능
+// level/experience/gold/gems는 서버 권위(battle/complete, npc/heal 등)로만 변경 가능.
+// injuries도 서버 권위: 추가=add_injury RPC(패배), 치료=npc/heal RPC(골드 sink),
+// 자연 치유=getProfile 시 서버가 naturalHealAt 기준으로 prune. 클라 PATCH 우회 차단.
 const PROFILE_COLUMNS = new Set([
   "fatigue", "fatigue_updated_at",
   "current_hp", "current_mp", "current_map_id",
-  "injuries", "traits", "religion", "buffs",
+  "traits", "religion", "buffs",
   "character", "appearance", "equipment", "nickname",
   "whisper_charges", "crystal_tier",
 ]);
 
-const JSONB_COLUMNS = new Set(["injuries", "traits", "religion", "buffs", "character", "appearance", "equipment"]);
+const JSONB_COLUMNS = new Set(["traits", "religion", "buffs", "character", "appearance", "equipment"]);
 
 const PROFICIENCY_KEYS = new Set([
   "light_sword", "medium_sword", "great_sword", "axe", "mace", "dagger",
@@ -47,6 +49,27 @@ export class TablesController {
 
   @Get("profile")
   async getProfile(@Req() req: Request) {
+    // 자연 치유: naturalHealAt이 지난 부상을 서버 권위로 제거 (클라 PATCH 우회 차단).
+    // 치명상(naturalHealAt 없음)은 유지 → npc/heal 골드 sink로만 치료 가능.
+    // WHERE 가드로 제거 대상이 있을 때만 UPDATE.
+    await pool.query(
+      `update characters
+         set injuries = coalesce((
+           select jsonb_agg(inj)
+           from jsonb_array_elements(injuries) inj
+           where inj->>'naturalHealAt' is null
+              or (inj->>'naturalHealAt')::timestamptz > now()
+         ), '[]'::jsonb)
+       where user_id = $1
+         and jsonb_typeof(injuries) = 'array'
+         and exists (
+           select 1 from jsonb_array_elements(injuries) inj
+           where inj->>'naturalHealAt' is not null
+             and (inj->>'naturalHealAt')::timestamptz <= now()
+         )`,
+      [req.userId]
+    );
+
     const { rows } = await pool.query(`select * from characters where user_id = $1`, [req.userId]);
     if (!rows[0]) {
       throw new NotFoundException({ error: "프로필이 없습니다" });

@@ -8,7 +8,7 @@ import {
   getItemType,
   type GameQuest,
 } from "../game-data/game-data.js";
-import { applyLevelUps } from "../game-data/leveling.js";
+import { grantExpGold } from "../database/rewards.js";
 
 /**
  * 서버 권위 퀘스트.
@@ -181,19 +181,10 @@ export class QuestService {
     }
 
     // ---- 보상 지급 ----
-    const { rows: cr } = await pool.query<{ level: number; experience: number; gold: number }>(
-      `select level, experience, gold from characters where user_id = $1`,
-      [userId]
-    );
-    const char = cr[0];
-    if (!char) throw new NotFoundException({ error: "캐릭터가 없습니다" });
-
     const exp = quest.rewards.exp ?? 0;
     const gold = quest.rewards.gold ?? 0;
-    const { newLevel, newExp, levelsGained } = applyLevelUps(Number(char.level) || 1, Number(char.experience || 0), exp);
-    const totalGold = Number(char.gold || 0) + gold;
 
-    // 원자적: 보상 수령 상태를 조건부로 갱신 (동시 중복 수령 방지)
+    // 원자적: 보상 수령 상태를 조건부로 갱신 (동시 중복 수령 방지). 지급 전에 선점.
     const upd = await pool.query(
       `update user_quests set status = 'claimed', updated_at = now()
        where user_id = $1 and quest_id = $2 and status <> 'claimed'`,
@@ -203,10 +194,8 @@ export class QuestService {
       throw new ConflictException({ error: "이미 보상을 수령한 퀘스트입니다", code: "ALREADY_CLAIMED" });
     }
 
-    await pool.query(
-      `update characters set level = $2, experience = $3, gold = $4 where user_id = $1`,
-      [userId, newLevel, newExp, totalGold]
-    );
+    // 보상은 상대 증분으로 지급 → 동시 정산 lost-update 방지.
+    const { newLevel, newExp, levelsGained, totalGold } = await grantExpGold(userId, exp, gold);
 
     const items = quest.rewards.items ?? [];
     for (const item of items) {

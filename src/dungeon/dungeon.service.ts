@@ -3,8 +3,9 @@ import { Injectable, Inject, BadRequestException, ConflictException, NotFoundExc
 import { env } from "../config/env.js";
 import { pool } from "../database/pool.js";
 import { callDbFunction } from "../database/rpc.js";
+import { consumeJti } from "../database/jti.js";
+import { grantExpGold } from "../database/rewards.js";
 import { getDungeon, getItemType } from "../game-data/game-data.js";
-import { applyLevelUps } from "../game-data/leveling.js";
 import { BattleService } from "../battle/battle.service.js";
 
 /**
@@ -176,32 +177,23 @@ export class DungeonService {
     }
 
     // ---- 던전 클리어 ----
-    this.pruneRunJti(now);
     if (this.clearedRunJti.has(payload.runJti)) {
       throw new ConflictException({ error: "이미 클리어 보상을 받은 던전입니다", code: "ALREADY_CLEARED" });
     }
+    // 정산 멱등성: DB 유니크 소비 판정(다중 인스턴스/재시작 대응). Map은 1차 캐시.
+    const fresh = await consumeJti(payload.runJti, RUN_TTL_MS);
+    if (!fresh) {
+      this.clearedRunJti.set(payload.runJti, now);
+      throw new ConflictException({ error: "이미 클리어 보상을 받은 던전입니다", code: "ALREADY_CLEARED" });
+    }
+    this.pruneRunJti(now);
     this.clearedRunJti.set(payload.runJti, now);
-
-    const { rows } = await pool.query<{ level: number; experience: number; gold: number }>(
-      `select level, experience, gold from characters where user_id = $1`,
-      [userId]
-    );
-    const char = rows[0];
-    if (!char) throw new NotFoundException({ error: "캐릭터가 없습니다" });
 
     const bonusExp = dungeon.clearRewards.exp ?? 0;
     const bonusGold = dungeon.clearRewards.gold ?? 0;
-    const { newLevel, newExp, levelsGained } = applyLevelUps(
-      Number(char.level) || 1,
-      Number(char.experience || 0),
-      bonusExp
-    );
-    const totalGold = Number(char.gold || 0) + bonusGold;
 
-    await pool.query(
-      `update characters set level = $2, experience = $3, gold = $4 where user_id = $1`,
-      [userId, newLevel, newExp, totalGold]
-    );
+    // 보상은 상대 증분으로 지급 → 동시 정산 lost-update 방지.
+    const { newLevel, newExp, levelsGained, totalGold } = await grantExpGold(userId, bonusExp, bonusGold);
 
     const items = dungeon.clearRewards.items ?? [];
     for (const item of items) {
