@@ -3,8 +3,9 @@ import { Injectable, Inject, BadRequestException, ConflictException, NotFoundExc
 import { env } from "../config/env.js";
 import { pool } from "../database/pool.js";
 import { callDbFunction } from "../database/rpc.js";
+import { consumeJti } from "../database/jti.js";
+import { grantExpGold } from "../database/rewards.js";
 import { getMonster, getItemType, type GameMonster } from "../game-data/game-data.js";
-import { applyLevelUps } from "../game-data/leveling.js";
 import { aggregateTraitEconomy } from "../game-data/traits.js";
 import { QuestService } from "../quest/quest.service.js";
 
@@ -117,6 +118,12 @@ export class BattleService {
       throw new BadRequestException({ error: "전투 시간이 비정상적으로 짧습니다" });
     }
 
+    // 정산 멱등성: DB 유니크 소비 판정(다중 인스턴스/재시작 대응). Map은 1차 캐시.
+    const fresh = await consumeJti(payload.jti, TOKEN_TTL_MS);
+    if (!fresh) {
+      this.usedJti.set(payload.jti, payload.iat);
+      throw new ConflictException({ error: "이미 정산된 전투입니다" });
+    }
     this.pruneJti(now);
     this.usedJti.set(payload.jti, payload.iat);
 
@@ -138,7 +145,7 @@ export class BattleService {
 
     // ---- 승리 정산 ----
     const { rows } = await pool.query(
-      `select level, experience, gold, traits from characters where user_id = $1`,
+      `select level, traits from characters where user_id = $1`,
       [userId]
     );
     const char = rows[0];
@@ -153,17 +160,12 @@ export class BattleService {
     const exp = Math.round(this.calculateExpBonus(monster, playerLevel) * econ.expMultiplier);
     const gold = Math.round((monster.rewards.gold ?? 0) * econ.goldMultiplier);
 
-    // 레벨업 (공용 헬퍼 — quest/dungeon과 동일 공식)
-    const { newLevel, newExp, levelsGained } = applyLevelUps(playerLevel, Number(char.experience || 0), exp);
-
-    const totalGold = Number(char.gold || 0) + gold;
-
-    await pool.query(
-      `update characters
-       set level = $2, experience = $3, gold = $4, current_hp = $5, current_mp = $6
-       where user_id = $1`,
-      [userId, newLevel, newExp, totalGold, Math.max(1, hp), mp]
-    );
+    // 보상은 상대 증분(gold=gold+delta, exp=exp+delta)으로 지급 → 동시 정산 lost-update 방지.
+    // 레벨업은 증분 결과(RETURNING) 기준으로 정규화 (quest/dungeon과 동일 공식).
+    const { newLevel, newExp, levelsGained, totalGold } = await grantExpGold(userId, exp, gold, {
+      currentHp: Math.max(1, hp),
+      currentMp: mp,
+    });
 
     // 드랍 롤 (서버) + 인벤토리 지급 (특성 희귀 드롭 보너스 반영)
     const drops = this.rollDrops(monster, econ.rareDropBonus);
