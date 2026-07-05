@@ -5,6 +5,9 @@ import { pool } from "../database/pool.js";
 import { callDbFunction } from "../database/rpc.js";
 import { getHealerPrice } from "../game-data/game-data.js";
 
+/** 이 레벨 이하 캐릭터는 치료비 무료 (초보자 배려). 서버 권위로 판정한다. */
+const FREE_HEAL_MAX_LEVEL = 5;
+
 /**
  * NPC 상호작용. 치료비는 서버가 healers.json 가격표로 계산한다 (클라이언트 금액 신뢰 안 함).
  */
@@ -18,9 +21,9 @@ export class NpcController {
       throw new BadRequestException({ error: "npcId와 injuryIndex가 필요합니다" });
     }
 
-    // 부상 등급은 DB에서 읽는다
+    // 부상 등급과 캐릭터 레벨은 DB에서 읽는다 (클라 전달값 불신)
     const { rows } = await pool.query(
-      `select injuries -> $2 as injury from characters where user_id = $1`,
+      `select injuries -> $2 as injury, level from characters where user_id = $1`,
       [req.userId, injuryIndex]
     );
     const injury = rows[0]?.injury as { type?: string } | null;
@@ -28,10 +31,14 @@ export class NpcController {
       throw new NotFoundException({ error: "해당 부상이 없습니다" });
     }
 
-    const goldCost = getHealerPrice(npcId, injury.type);
-    if (goldCost === undefined) {
+    const basePrice = getHealerPrice(npcId, injury.type);
+    if (basePrice === undefined) {
       throw new NotFoundException({ error: "치료 서비스를 제공하지 않는 NPC입니다" });
     }
+
+    // 레벨 5 이하 무료 (서버 권위). DB level이 없으면 1로 간주.
+    const level = typeof rows[0]?.level === "number" ? (rows[0].level as number) : 1;
+    const goldCost = level <= FREE_HEAL_MAX_LEVEL ? 0 : basePrice;
 
     const data = await callDbFunction(
       "heal_injury_with_gold",

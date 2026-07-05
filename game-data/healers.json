@@ -18,9 +18,9 @@
       },
       "services": {
         "healing": {
-          "light": { "gold": 50, "description": "경상 치료" },
-          "medium": { "gold": 200, "description": "중상 치료" },
-          "critical": { "gold": 500, "description": "치명상 치료" }
+          "light": { "gold": 25, "description": "경상 치료" },
+          "medium": { "gold": 100, "description": "중상 치료" },
+          "critical": { "gold": 250, "description": "치명상 치료" }
         }
       }
     },
@@ -40,9 +40,9 @@
       },
       "services": {
         "healing": {
-          "light": { "gold": 45, "description": "경상 치료 (시장 할인)" },
-          "medium": { "gold": 180, "description": "중상 치료 (시장 할인)" },
-          "critical": { "gold": 450, "description": "치명상 치료 (시장 할인)" }
+          "light": { "gold": 23, "description": "경상 치료 (시장 할인)" },
+          "medium": { "gold": 90, "description": "중상 치료 (시장 할인)" },
+          "critical": { "gold": 225, "description": "치명상 치료 (시장 할인)" }
         }
       }
     },
@@ -62,9 +62,9 @@
       },
       "services": {
         "healing": {
-          "light": { "gold": 40, "description": "경상 치료 (숲 할인)" },
-          "medium": { "gold": 160, "description": "중상 치료 (숲 할인)" },
-          "critical": { "gold": 400, "description": "치명상 치료 (숲 할인)" }
+          "light": { "gold": 20, "description": "경상 치료 (숲 할인)" },
+          "medium": { "gold": 80, "description": "중상 치료 (숲 할인)" },
+          "critical": { "gold": 200, "description": "치명상 치료 (숲 할인)" }
         }
       }
     },
@@ -84,9 +84,9 @@
       },
       "services": {
         "healing": {
-          "light": { "gold": 60, "description": "경상 치료 (투기장)" },
-          "medium": { "gold": 250, "description": "중상 치료 (투기장)" },
-          "critical": { "gold": 600, "description": "치명상 치료 (투기장)" }
+          "light": { "gold": 30, "description": "경상 치료 (투기장)" },
+          "medium": { "gold": 125, "description": "중상 치료 (투기장)" },
+          "critical": { "gold": 300, "description": "치명상 치료 (투기장)" }
         }
       }
     },
@@ -106,9 +106,9 @@
       },
       "services": {
         "healing": {
-          "light": { "gold": 30, "description": "경상 치료 (저렴)" },
-          "medium": { "gold": 120, "description": "중상 치료 (저렴)" },
-          "critical": { "gold": 300, "description": "치명상 치료 (저렴)" }
+          "light": { "gold": 15, "description": "경상 치료 (저렴)" },
+          "medium": { "gold": 60, "description": "중상 치료 (저렴)" },
+          "critical": { "gold": 150, "description": "치명상 치료 (저렴)" }
         }
       }
     }
