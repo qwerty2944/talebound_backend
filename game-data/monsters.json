@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "generatedAt": "2026-07-05T09:31:34.926Z",
+  "generatedAt": "2026-07-05T11:33:02.365Z",
   "metadata": {
     "version": "1.0.0",
     "description": "몬스터 시스템 메타데이터",
@@ -974,6 +974,89 @@
       "description": {
         "ko": "어둠 속에서 나타나는 검은 슬라임. 신성에 매우 약하고 암흑에 매우 강하다.",
         "en": "A black slime appearing in darkness. Very weak to holy, very resistant to dark."
+      },
+      "type": "amorphous",
+      "category": "slime"
+    },
+    {
+      "id": "slime_chief",
+      "nameKo": "슬라임 두목",
+      "nameEn": "Slime Chief",
+      "rank": "boss",
+      "alignment": "neutral",
+      "mapIds": [
+        "swamp_entrance"
+      ],
+      "level": 3,
+      "element": "earth",
+      "icon": "👑",
+      "stats": {
+        "hp": 80,
+        "attack": 9,
+        "defense": 5,
+        "speed": 4,
+        "physicalResist": {
+          "slashResist": 1.4,
+          "pierceResist": 1.3,
+          "crushResist": 0.4
+        },
+        "elementResist": {
+          "fire": 1.3,
+          "ice": 0.9,
+          "lightning": 1.1,
+          "earth": 0.6,
+          "holy": 1,
+          "dark": 1
+        }
+      },
+      "rewards": {
+        "exp": 60,
+        "gold": 30
+      },
+      "drops": [
+        {
+          "itemId": "slime_gel",
+          "chance": 0.8,
+          "quantity": [
+            1,
+            3
+          ]
+        },
+        {
+          "itemId": "slime_core",
+          "chance": 0.3,
+          "quantity": [
+            1,
+            1
+          ]
+        }
+      ],
+      "behavior": "territorial",
+      "maxAp": 8,
+      "actionWeights": {
+        "basicAttack": 30,
+        "specialSkill": 70,
+        "borrowedAbility": 0
+      },
+      "abilities": [
+        {
+          "abilityId": "body_slam",
+          "level": 1,
+          "weight": 60
+        },
+        {
+          "abilityId": "sticky_split",
+          "level": 1,
+          "weight": 40,
+          "condition": {
+            "hpBelow": 60
+          }
+        }
+      ],
+      "bossSchedule": "always",
+      "description": {
+        "ko": "슬라임 무리를 이끄는 작은 두목. 저레벨 모험가도 도전할 수 있는 첫 보스다.",
+        "en": "The small chief leading a slime pack. A first boss even low-level adventurers can challenge."
       },
       "type": "amorphous",
       "category": "slime"
@@ -4014,9 +4097,9 @@
     }
   ],
   "summary": {
-    "total": 50,
+    "total": 51,
     "byType": {
-      "amorphous": 7,
+      "amorphous": 8,
       "beast": 8,
       "construct": 5,
       "humanoid": 5,
@@ -4026,7 +4109,7 @@
       "undead": 7
     },
     "byCategory": {
-      "slime": 7,
+      "slime": 8,
       "mammals": 8,
       "armor": 1,
       "golem": 2,
@@ -4042,7 +4125,7 @@
       "skeletons": 7
     },
     "byMapId": {
-      "swamp_entrance": 1,
+      "swamp_entrance": 2,
       "shallow_marsh": 4,
       "slime_nest": 2,
       "forest_entrance": 5,
