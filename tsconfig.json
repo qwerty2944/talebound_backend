@@ -10,6 +10,7 @@
     "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "useDefineForClassFields": false,
     "resolveJsonModule": true,
     "noEmit": true,
     "types": ["node"]
