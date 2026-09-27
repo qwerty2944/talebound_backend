@@ -41,4 +41,5 @@ for (const rel of FILES) {
   fs.copyFileSync(src, dest);
   console.log(`✓ ${rel} → game-data/${path.basename(rel)}`);
 }
+fs.copyFileSync(path.resolve(FRONTEND_DATA, "../../src/shared/lib/character/equipment-fit.json"), path.join(DEST, "equipment-fit.json"));
 console.log("동기화 완료. 변경분을 커밋하세요.");

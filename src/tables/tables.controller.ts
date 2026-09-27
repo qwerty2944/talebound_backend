@@ -14,6 +14,7 @@ import {
   ForbiddenException,
 } from "@nestjs/common";
 import type { Request } from "express";
+import { getEquipmentFitError } from "../game-data/equipment-fit.js";
 import { pool } from "../database/pool.js";
 import { JwtAuthGuard } from "../auth/jwt-auth.guard.js";
 
@@ -89,8 +90,29 @@ export class TablesController {
       JSONB_COLUMNS.has(k) && updates[k] !== null ? JSON.stringify(updates[k]) : updates[k]
     );
 
-    await pool.query(`update characters set ${sets} where user_id = $1`, [req.userId, ...values]);
-    return { data: null };
+    const client = await pool.connect();
+    try {
+      await client.query("begin");
+      if (keys.some(key => ["equipment", "appearance", "character"].includes(key))) {
+        // Lock validation and update together so concurrent race/equipment changes cannot bypass fit.
+        const { rows } = await client.query(
+          "select equipment, appearance, character from characters where user_id = $1 for update", [req.userId]
+        );
+        if (!rows[0]) throw new NotFoundException({ error: "프로필이 없습니다" });
+        const current = rows[0];
+        const next = (key: string) => Object.hasOwn(updates, key) ? updates[key] : current[key];
+        const error = getEquipmentFitError(next("equipment"), next("appearance"), next("character"));
+        if (error) throw new BadRequestException({ error });
+      }
+      await client.query(`update characters set ${sets} where user_id = $1`, [req.userId, ...values]);
+      await client.query("commit");
+      return { data: null };
+    } catch (error) {
+      await client.query("rollback");
+      throw error;
+    } finally {
+      client.release();
+    }
   }
 
   // ============ game_settings ============

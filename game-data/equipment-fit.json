@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-09-27",
+  "rules": [
+    {
+      "category": "helmet",
+      "sprite": "Elf_Helmet_03",
+      "allowedRaceCategories": [
+        "elf"
+      ],
+      "reason": "인간/엘프 착용 비교: 옆면의 귀 자리 절개와 엘프 귀가 드러나는 투구 재단.",
+      "evidence": "docs/art-review/fit-0.png",
+      "itemIds": [
+        "amber_gem_winged_helm"
+      ]
+    },
+    {
+      "category": "helmet",
+      "sprite": "Elf_Helmet_05",
+      "allowedRaceCategories": [
+        "elf"
+      ],
+      "reason": "인간/엘프 착용 비교: 옆면의 귀 자리 절개와 엘프 귀가 드러나는 투구 재단.",
+      "evidence": "docs/art-review/fit-0.png",
+      "itemIds": [
+        "orange_crested_silver_helm"
+      ]
+    },
+    {
+      "category": "helmet",
+      "sprite": "Elf_Helmet_07",
+      "allowedRaceCategories": [
+        "elf"
+      ],
+      "reason": "인간/엘프 착용 비교: 옆면의 귀 자리 절개와 엘프 귀가 드러나는 투구 재단.",
+      "evidence": "docs/art-review/fit-0.png",
+      "itemIds": [
+        "elven_leaf_helm"
+      ]
+    },
+    {
+      "category": "helmet",
+      "sprite": "Elf_Helmet_09",
+      "allowedRaceCategories": [
+        "elf"
+      ],
+      "reason": "인간/엘프 착용 비교: 옆면의 귀 자리 절개와 엘프 귀가 드러나는 투구 재단.",
+      "evidence": "docs/art-review/fit-0.png",
+      "itemIds": [
+        "vine_wrapped_iron_helm"
+      ]
+    },
+    {
+      "category": "helmet",
+      "sprite": "Elf_Helmet_11",
+      "allowedRaceCategories": [
+        "elf"
+      ],
+      "reason": "인간/엘프 착용 비교: 옆면의 귀 자리 절개와 엘프 귀가 드러나는 투구 재단.",
+      "evidence": "docs/art-review/fit-10.png",
+      "itemIds": [
+        "steel_helmet"
+      ]
+    },
+    {
+      "category": "helmet",
+      "sprite": "Elf_Helmet_16",
+      "allowedRaceCategories": [
+        "elf"
+      ],
+      "reason": "인간/엘프 착용 비교: 옆면의 귀 자리 절개와 엘프 귀가 드러나는 투구 재단.",
+      "evidence": "docs/art-review/fit-10.png",
+      "itemIds": [
+        "knight_helmet"
+      ]
+    },
+    {
+      "category": "helmet",
+      "sprite": "Elf_Helmet_17",
+      "allowedRaceCategories": [
+        "elf"
+      ],
+      "reason": "인간/엘프 착용 비교: 옆면의 귀 자리 절개와 엘프 귀가 드러나는 투구 재단.",
+      "evidence": "docs/art-review/fit-10.png",
+      "itemIds": [
+        "demon_eye_black_helm"
+      ]
+    },
+    {
+      "category": "helmet",
+      "sprite": "Elf_Helmet_18",
+      "allowedRaceCategories": [
+        "elf"
+      ],
+      "reason": "인간/엘프 착용 비교: 옆면의 귀 자리 절개와 엘프 귀가 드러나는 투구 재단.",
+      "evidence": "docs/art-review/fit-10.png",
+      "itemIds": [
+        "amber_gem_silver_helm"
+      ]
+    },
+    {
+      "category": "helmet",
+      "sprite": "Elf_Helmet_19",
+      "allowedRaceCategories": [
+        "elf"
+      ],
+      "reason": "인간/엘프 착용 비교: 옆면의 귀 자리 절개와 엘프 귀가 드러나는 투구 재단.",
+      "evidence": "docs/art-review/fit-10.png",
+      "itemIds": [
+        "spiked_black_iron_helm"
+      ]
+    },
+    {
+      "category": "helmet",
+      "sprite": "Elf_Helmet_20",
+      "allowedRaceCategories": [
+        "elf"
+      ],
+      "reason": "인간/엘프 착용 비교: 옆면의 귀 자리 절개와 엘프 귀가 드러나는 투구 재단.",
+      "evidence": "docs/art-review/fit-10.png",
+      "itemIds": [
+        "penguin_helm"
+      ]
+    }
+  ]
+}
