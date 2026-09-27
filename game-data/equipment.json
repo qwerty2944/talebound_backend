@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-07-04T18:30:46.569Z",
+  "generatedAt": "2026-09-27T05:31:17.129Z",
   "type": "equipment",
   "items": [
     {
@@ -1081,8 +1081,8 @@
     },
     {
       "id": "red_round_shield",
-      "nameKo": "붉은 원형 방패",
-      "nameEn": "Red Round Shield",
+      "nameKo": "붉은 보석 방패",
+      "nameEn": "Red Gem Shield",
       "description": {
         "ko": "붉은 원형 방패. 방패 장비.",
         "en": "붉은 원형 방패. 방패 장비."
@@ -1165,8 +1165,8 @@
     },
     {
       "id": "orc_round_shield",
-      "nameKo": "오크 원형 방패",
-      "nameEn": "Orc Round Shield",
+      "nameKo": "오크 마름모 방패",
+      "nameEn": "Orc Diamond Shield",
       "description": {
         "ko": "오크 원형 방패. 방패 장비.",
         "en": "오크 원형 방패. 방패 장비."
@@ -1249,8 +1249,8 @@
     },
     {
       "id": "iron_buckler",
-      "nameKo": "무쇠 버클러",
-      "nameEn": "Iron Buckler",
+      "nameKo": "무쇠 마름모 방패",
+      "nameEn": "Iron Diamond Shield",
       "description": {
         "ko": "무쇠 버클러. 방패 장비.",
         "en": "무쇠 버클러. 방패 장비."
@@ -3023,8 +3023,8 @@
       "nameKo": "엘프풍 정찰병 견갑",
       "nameEn": "Elven Scout Shoulder Guard",
       "description": {
-        "ko": "기본적인 천 셔츠.",
-        "en": "기본적인 천 셔츠."
+        "ko": "엘프풍 정찰병 견갑. 몸통과 어깨를 보호하는 장비.",
+        "en": "엘프풍 정찰병 견갑. 몸통과 어깨를 보호하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -3048,8 +3048,8 @@
       "nameKo": "가죽 갑옷",
       "nameEn": "Leather Armor",
       "description": {
-        "ko": "가죽으로 만든 가벼운 갑옷.",
-        "en": "가죽으로 만든 가벼운 갑옷."
+        "ko": "가죽 갑옷. 몸통과 어깨를 보호하는 장비.",
+        "en": "가죽 갑옷. 몸통과 어깨를 보호하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -3074,8 +3074,8 @@
       "nameKo": "엘프풍 호박빛 견갑",
       "nameEn": "Elven Amber Pauldrons",
       "description": {
-        "ko": "쇠사슬을 엮어 만든 갑옷.",
-        "en": "쇠사슬을 엮어 만든 갑옷."
+        "ko": "엘프풍 호박빛 견갑. 몸통과 어깨를 보호하는 장비.",
+        "en": "엘프풍 호박빛 견갑. 몸통과 어깨를 보호하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -3101,8 +3101,8 @@
       "nameKo": "엘프풍 야청 강철 견갑",
       "nameEn": "Elven Dusksteel Pauldrons",
       "description": {
-        "ko": "철판으로 만든 무거운 갑옷.",
-        "en": "철판으로 만든 무거운 갑옷."
+        "ko": "엘프풍 야청 강철 견갑. 몸통과 어깨를 보호하는 장비.",
+        "en": "엘프풍 야청 강철 견갑. 몸통과 어깨를 보호하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -3129,8 +3129,8 @@
       "nameKo": "오크풍 강철 흉갑",
       "nameEn": "Orcish Steel Breastplate",
       "description": {
-        "ko": "마법사가 입는 로브.",
-        "en": "마법사가 입는 로브."
+        "ko": "오크풍 강철 흉갑. 몸통과 어깨를 보호하는 장비.",
+        "en": "오크풍 강철 흉갑. 몸통과 어깨를 보호하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -3158,8 +3158,8 @@
       "nameKo": "언데드풍 밤빛 어깨띠",
       "nameEn": "Undead Nightshade Baldric",
       "description": {
-        "ko": "왕국 기사단의 갑옷.",
-        "en": "왕국 기사단의 갑옷."
+        "ko": "언데드풍 밤빛 어깨띠. 몸통과 어깨를 보호하는 장비.",
+        "en": "언데드풍 밤빛 어깨띠. 몸통과 어깨를 보호하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -3187,8 +3187,8 @@
       "nameKo": "궁수풍 초록 사냥 튜닉",
       "nameEn": "Archer Green Hunting Tunic",
       "description": {
-        "ko": "드래곤 비늘로 만든 갑옷.",
-        "en": "드래곤 비늘로 만든 갑옷."
+        "ko": "궁수풍 초록 사냥 튜닉. 몸통과 어깨를 보호하는 장비.",
+        "en": "궁수풍 초록 사냥 튜닉. 몸통과 어깨를 보호하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -3219,8 +3219,8 @@
       "nameKo": "기사풍 판금 갑옷",
       "nameEn": "Knight Plate Armor",
       "description": {
-        "ko": "대마법사가 입었던 전설적인 로브.",
-        "en": "대마법사가 입었던 전설적인 로브."
+        "ko": "기사풍 판금 갑옷. 몸통과 어깨를 보호하는 장비.",
+        "en": "기사풍 판금 갑옷. 몸통과 어깨를 보호하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -3250,8 +3250,8 @@
       "nameKo": "강철 흉갑",
       "nameEn": "Steel Cuirass",
       "description": {
-        "ko": "신이 내렸다는 전설의 갑옷.",
-        "en": "신이 내렸다는 전설의 갑옷."
+        "ko": "강철 흉갑. 몸통과 어깨를 보호하는 장비.",
+        "en": "강철 흉갑. 몸통과 어깨를 보호하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -4530,8 +4530,8 @@
       "nameKo": "단순한 망토",
       "nameEn": "Simple Cape",
       "description": {
-        "ko": "평범한 천 망토.",
-        "en": "평범한 천 망토."
+        "ko": "단순한 망토. 등에 착용하는 장비.",
+        "en": "단순한 망토. 등에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -4555,8 +4555,8 @@
       "nameKo": "여행자의 망토",
       "nameEn": "Traveler's Cloak",
       "description": {
-        "ko": "여행자가 두르는 망토.",
-        "en": "여행자가 두르는 망토."
+        "ko": "여행자의 망토. 등에 착용하는 장비.",
+        "en": "여행자의 망토. 등에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -4581,8 +4581,8 @@
       "nameKo": "모험가의 망토",
       "nameEn": "Adventurer's Cloak",
       "description": {
-        "ko": "모험가가 착용하는 튼튼한 망토.",
-        "en": "모험가가 착용하는 튼튼한 망토."
+        "ko": "모험가의 망토. 등에 착용하는 장비.",
+        "en": "모험가의 망토. 등에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -4607,8 +4607,8 @@
       "nameKo": "기사의 망토",
       "nameEn": "Knight's Cape",
       "description": {
-        "ko": "왕국 기사단의 망토.",
-        "en": "왕국 기사단의 망토."
+        "ko": "기사의 망토. 등에 착용하는 장비.",
+        "en": "기사의 망토. 등에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -4635,8 +4635,8 @@
       "nameKo": "오크 화살통",
       "nameEn": "Orc Quiver",
       "description": {
-        "ko": "마법사가 두르는 신비로운 망토.",
-        "en": "마법사가 두르는 신비로운 망토."
+        "ko": "오크 화살통. 등에 착용하는 장비.",
+        "en": "오크 화살통. 등에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -4664,8 +4664,8 @@
       "nameKo": "해진 수의 망토",
       "nameEn": "Tattered Shroud Cloak",
       "description": {
-        "ko": "어둠에 녹아드는 검은 망토.",
-        "en": "어둠에 녹아드는 검은 망토."
+        "ko": "해진 수의 망토. 등에 착용하는 장비.",
+        "en": "해진 수의 망토. 등에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -4693,8 +4693,8 @@
       "nameKo": "잿빛 사제 망토",
       "nameEn": "Ashen Priest Cape",
       "description": {
-        "ko": "불사조 깃털로 만든 망토.",
-        "en": "불사조 깃털로 만든 망토."
+        "ko": "잿빛 사제 망토. 등에 착용하는 장비.",
+        "en": "잿빛 사제 망토. 등에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -4728,8 +4728,8 @@
       "nameKo": "진홍 마도사 망토",
       "nameEn": "Crimson Sorcerer's Cape",
       "description": {
-        "ko": "천상의 힘이 깃든 순백의 날개.",
-        "en": "천상의 힘이 깃든 순백의 날개."
+        "ko": "진홍 마도사 망토. 등에 착용하는 장비.",
+        "en": "진홍 마도사 망토. 등에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -4762,8 +4762,8 @@
       "nameKo": "대가의 진홍 마도사 망토",
       "nameEn": "Master's Crimson Sorcerer's Cape",
       "description": {
-        "ko": "암흑의 힘이 깃든 검은 날개.",
-        "en": "암흑의 힘이 깃든 검은 날개."
+        "ko": "대가의 진홍 마도사 망토. 등에 착용하는 장비.",
+        "en": "대가의 진홍 마도사 망토. 등에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -4796,8 +4796,8 @@
       "nameKo": "화살 꾸러미",
       "nameEn": "Bundle of Arrows",
       "description": {
-        "ko": "모든 것을 감싸는 전설의 망토.",
-        "en": "모든 것을 감싸는 전설의 망토."
+        "ko": "화살 꾸러미. 등에 착용하는 장비.",
+        "en": "화살 꾸러미. 등에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -5030,11 +5030,11 @@
     },
     {
       "id": "orc_ragged_cape",
-      "nameKo": "오크 누더기 망토",
-      "nameEn": "Orc Ragged Cape",
+      "nameKo": "오크 전투 깃발",
+      "nameEn": "Orc Battle Standard",
       "description": {
-        "ko": "오크 누더기 망토. 등 장비 장비.",
-        "en": "오크 누더기 망토. 등 장비 장비."
+        "ko": "등에 세우는 깃대와 해진 천으로 이루어진 오크 전투 깃발.",
+        "en": "등에 세우는 깃대와 해진 천으로 이루어진 오크 전투 깃발."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -5238,8 +5238,8 @@
     },
     {
       "id": "red_backpack",
-      "nameKo": "붉은 배낭",
-      "nameEn": "Red Backpack",
+      "nameKo": "붉은 도적 망토",
+      "nameEn": "Red Rogue Cape",
       "description": {
         "ko": "붉은 배낭. 등 장비 장비.",
         "en": "붉은 배낭. 등 장비 장비."
@@ -5420,11 +5420,11 @@
     },
     {
       "id": "travel_waterskin",
-      "nameKo": "여행용 물주머니",
-      "nameEn": "Travel Waterskin",
+      "nameKo": "여행용 롤주머니",
+      "nameEn": "Travel Bedroll Pouch",
       "description": {
-        "ko": "여행용 물주머니. 등 장비 장비.",
-        "en": "여행용 물주머니. 등 장비 장비."
+        "ko": "등 장비 부위에 착용하는 여행용 롤주머니.",
+        "en": "등 장비 부위에 착용하는 여행용 롤주머니."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -5472,11 +5472,11 @@
     },
     {
       "id": "simple_tunic",
-      "nameKo": "단순한 튜닉",
-      "nameEn": "Simple Tunic",
+      "nameKo": "붉은 금장 튜닉",
+      "nameEn": "Red Gold-Trimmed Tunic",
       "description": {
-        "ko": "평범한 천으로 만든 튜닉.",
-        "en": "평범한 천으로 만든 튜닉."
+        "ko": "붉은 금장 튜닉. 몸통에 입는 상의.",
+        "en": "붉은 금장 튜닉. 몸통에 입는 상의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -5497,11 +5497,11 @@
     },
     {
       "id": "traveler_clothes",
-      "nameKo": "여행자의 옷",
-      "nameEn": "Traveler's Clothes",
+      "nameKo": "흰 금장 예복",
+      "nameEn": "White Gold-Trimmed Formalwear",
       "description": {
-        "ko": "여행자가 입는 편한 옷.",
-        "en": "여행자가 입는 편한 옷."
+        "ko": "흰 금장 예복. 몸통에 입는 상의.",
+        "en": "흰 금장 예복. 몸통에 입는 상의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -5526,8 +5526,8 @@
       "nameKo": "오크풍 허리 두르개",
       "nameEn": "Orcish Waist Wrap",
       "description": {
-        "ko": "가죽으로 보강된 옷.",
-        "en": "가죽으로 보강된 옷."
+        "ko": "오크풍 허리 두르개. 몸통에 입는 상의.",
+        "en": "오크풍 허리 두르개. 몸통에 입는 상의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -5552,8 +5552,8 @@
       "nameKo": "언데드풍 핏빛 로브",
       "nameEn": "Undead Crimson Robe",
       "description": {
-        "ko": "도적들이 애용하는 검은 옷.",
-        "en": "도적들이 애용하는 검은 옷."
+        "ko": "언데드풍 핏빛 로브. 몸통에 입는 상의.",
+        "en": "언데드풍 핏빛 로브. 몸통에 입는 상의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -5580,8 +5580,8 @@
       "nameKo": "청백 체크 원피스",
       "nameEn": "Blue-White Check Dress",
       "description": {
-        "ko": "사냥꾼이 입는 기능적인 옷.",
-        "en": "사냥꾼이 입는 기능적인 옷."
+        "ko": "청백 체크 원피스. 몸통에 입는 상의.",
+        "en": "청백 체크 원피스. 몸통에 입는 상의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -5608,8 +5608,8 @@
       "nameKo": "흰 카디건과 자주 원피스",
       "nameEn": "White Cardigan with Plum Dress",
       "description": {
-        "ko": "어둠에 녹아드는 검은 옷.",
-        "en": "어둠에 녹아드는 검은 옷."
+        "ko": "흰 카디건과 자주 원피스. 몸통에 입는 상의.",
+        "en": "흰 카디건과 자주 원피스. 몸통에 입는 상의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -5637,8 +5637,8 @@
       "nameKo": "남색 정장",
       "nameEn": "Navy Suit",
       "description": {
-        "ko": "암살 길드의 특수 복장.",
-        "en": "암살 길드의 특수 복장."
+        "ko": "남색 정장. 몸통에 입는 상의.",
+        "en": "남색 정장. 몸통에 입는 상의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -5667,8 +5667,8 @@
       "nameKo": "물방울 무늬 분홍 티셔츠",
       "nameEn": "Dotted Pink Tee",
       "description": {
-        "ko": "바람처럼 빠르다는 전설의 옷.",
-        "en": "바람처럼 빠르다는 전설의 옷."
+        "ko": "물방울 무늬 분홍 티셔츠. 몸통에 입는 상의.",
+        "en": "물방울 무늬 분홍 티셔츠. 몸통에 입는 상의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -8773,8 +8773,8 @@
       "nameKo": "루비 티아라",
       "nameEn": "Ruby Tiara",
       "description": {
-        "ko": "가죽으로 만든 기본 모자.",
-        "en": "가죽으로 만든 기본 모자."
+        "ko": "루비 티아라. 머리에 착용하는 장비.",
+        "en": "루비 티아라. 머리에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -8798,8 +8798,8 @@
       "nameKo": "사슴뿔 머리장식",
       "nameEn": "Antler Headdress",
       "description": {
-        "ko": "철로 만든 기본 투구.",
-        "en": "철로 만든 기본 투구."
+        "ko": "사슴뿔 머리장식. 머리에 착용하는 장비.",
+        "en": "사슴뿔 머리장식. 머리에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -8824,8 +8824,8 @@
       "nameKo": "홍옥 날개 투구",
       "nameEn": "Ruby Winged Helm",
       "description": {
-        "ko": "단단한 강철 투구.",
-        "en": "단단한 강철 투구."
+        "ko": "홍옥 날개 투구. 엘프의 긴 귀를 위한 옆면 절개가 있는 머리 장비. 엘프 종족만 착용할 수 있다.",
+        "en": "홍옥 날개 투구. 엘프의 긴 귀를 위한 옆면 절개가 있는 머리 장비. 엘프 종족만 착용할 수 있다."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -8842,7 +8842,10 @@
       },
       "requirements": {
         "level": 5,
-        "con": 8
+        "con": 8,
+        "raceCategories": [
+          "elf"
+        ]
       }
     },
     {
@@ -8850,8 +8853,8 @@
       "nameKo": "황금 테 은빛 투구",
       "nameEn": "Gold-Banded Silver Helm",
       "description": {
-        "ko": "왕국 기사단의 투구.",
-        "en": "왕국 기사단의 투구."
+        "ko": "황금 테 은빛 투구. 엘프의 긴 귀를 위한 옆면 절개가 있는 머리 장비. 엘프 종족만 착용할 수 있다.",
+        "en": "황금 테 은빛 투구. 엘프의 긴 귀를 위한 옆면 절개가 있는 머리 장비. 엘프 종족만 착용할 수 있다."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -8870,7 +8873,10 @@
       "requirements": {
         "level": 12,
         "str": 8,
-        "con": 10
+        "con": 10,
+        "raceCategories": [
+          "elf"
+        ]
       }
     },
     {
@@ -8878,8 +8884,8 @@
       "nameKo": "뿔 달린 강철 투구",
       "nameEn": "Horned Steel Helmet",
       "description": {
-        "ko": "마법사가 쓰는 뾰족한 모자.",
-        "en": "마법사가 쓰는 뾰족한 모자."
+        "ko": "뿔 달린 강철 투구. 머리에 착용하는 장비.",
+        "en": "뿔 달린 강철 투구. 머리에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -8907,8 +8913,8 @@
       "nameKo": "밀짚모자",
       "nameEn": "Straw Hat",
       "description": {
-        "ko": "엘프 귀족이 쓰는 우아한 관.",
-        "en": "엘프 귀족이 쓰는 우아한 관."
+        "ko": "밀짚모자. 머리에 착용하는 장비.",
+        "en": "밀짚모자. 머리에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -8936,8 +8942,8 @@
       "nameKo": "드래곤 투구",
       "nameEn": "Dragon Helm",
       "description": {
-        "ko": "드래곤의 머리를 본뜬 투구.",
-        "en": "드래곤의 머리를 본뜬 투구."
+        "ko": "드래곤 투구. 머리에 착용하는 장비.",
+        "en": "드래곤 투구. 머리에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -8968,8 +8974,8 @@
       "nameKo": "초록 리본 머리장식",
       "nameEn": "Green Ribbon Hairpiece",
       "description": {
-        "ko": "고대 현자가 착용했던 왕관.",
-        "en": "고대 현자가 착용했던 왕관."
+        "ko": "초록 리본 머리장식. 머리에 착용하는 장비.",
+        "en": "초록 리본 머리장식. 머리에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -8998,8 +9004,8 @@
       "nameKo": "진분홍 리본 머리장식",
       "nameEn": "Magenta Ribbon Hairpiece",
       "description": {
-        "ko": "모든 공격을 막아낸다는 전설의 투구.",
-        "en": "모든 공격을 막아낸다는 전설의 투구."
+        "ko": "진분홍 리본 머리장식. 머리에 착용하는 장비.",
+        "en": "진분홍 리본 머리장식. 머리에 착용하는 장비."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -9069,7 +9075,10 @@
         "defense": 8
       },
       "requirements": {
-        "level": 5
+        "level": 5,
+        "raceCategories": [
+          "elf"
+        ]
       }
     },
     {
@@ -9119,7 +9128,10 @@
         "defense": 8
       },
       "requirements": {
-        "level": 5
+        "level": 5,
+        "raceCategories": [
+          "elf"
+        ]
       }
     },
     {
@@ -9144,7 +9156,10 @@
         "defense": 7
       },
       "requirements": {
-        "level": 3
+        "level": 3,
+        "raceCategories": [
+          "elf"
+        ]
       }
     },
     {
@@ -9194,7 +9209,10 @@
         "defense": 7
       },
       "requirements": {
-        "level": 3
+        "level": 3,
+        "raceCategories": [
+          "elf"
+        ]
       }
     },
     {
@@ -9224,8 +9242,8 @@
     },
     {
       "id": "red_maned_helm",
-      "nameKo": "붉은 갈기 투구",
-      "nameEn": "Red-Maned Helm",
+      "nameKo": "금테 붉은 머리장식",
+      "nameEn": "Gold-Banded Red Hair Ornament",
       "description": {
         "ko": "붉은 갈기 투구. 머리 장비 장비.",
         "en": "붉은 갈기 투구. 머리 장비 장비."
@@ -9249,8 +9267,8 @@
     },
     {
       "id": "ruby_crest_helm",
-      "nameKo": "홍옥 문장 투구",
-      "nameEn": "Ruby Crest Helm",
+      "nameKo": "홍옥 문장 머리띠",
+      "nameEn": "Ruby-Crest Headband",
       "description": {
         "ko": "홍옥 문장 투구. 머리 장비 장비.",
         "en": "홍옥 문장 투구. 머리 장비 장비."
@@ -9344,7 +9362,10 @@
         "defense": 10
       },
       "requirements": {
-        "level": 8
+        "level": 8,
+        "raceCategories": [
+          "elf"
+        ]
       }
     },
     {
@@ -9369,7 +9390,10 @@
         "defense": 8
       },
       "requirements": {
-        "level": 5
+        "level": 5,
+        "raceCategories": [
+          "elf"
+        ]
       }
     },
     {
@@ -9394,7 +9418,10 @@
         "defense": 8
       },
       "requirements": {
-        "level": 5
+        "level": 5,
+        "raceCategories": [
+          "elf"
+        ]
       }
     },
     {
@@ -9419,7 +9446,10 @@
         "defense": 7
       },
       "requirements": {
-        "level": 3
+        "level": 3,
+        "raceCategories": [
+          "elf"
+        ]
       }
     },
     {
@@ -11802,8 +11832,8 @@
       "nameKo": "천 바지",
       "nameEn": "Cloth Pants",
       "description": {
-        "ko": "평범한 천 바지.",
-        "en": "평범한 천 바지."
+        "ko": "천 바지. 다리에 착용하는 하의.",
+        "en": "천 바지. 다리에 착용하는 하의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -11827,8 +11857,8 @@
       "nameKo": "주홍 비단 바지",
       "nameEn": "Scarlet Silk Pants",
       "description": {
-        "ko": "가죽으로 만든 바지.",
-        "en": "가죽으로 만든 바지."
+        "ko": "주홍 비단 바지. 다리에 착용하는 하의.",
+        "en": "주홍 비단 바지. 다리에 착용하는 하의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -11853,8 +11883,8 @@
       "nameKo": "주황 천 바지",
       "nameEn": "Orange Cloth Pants",
       "description": {
-        "ko": "쇠사슬을 엮어 만든 바지.",
-        "en": "쇠사슬을 엮어 만든 바지."
+        "ko": "주황 천 바지. 다리에 착용하는 하의.",
+        "en": "주황 천 바지. 다리에 착용하는 하의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -11879,8 +11909,8 @@
       "nameKo": "판금 다리보호구",
       "nameEn": "Plate Leggings",
       "description": {
-        "ko": "철판으로 만든 다리보호구.",
-        "en": "철판으로 만든 다리보호구."
+        "ko": "판금 다리보호구. 다리에 착용하는 하의.",
+        "en": "판금 다리보호구. 다리에 착용하는 하의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -11907,8 +11937,8 @@
       "nameKo": "오크 가죽 바지",
       "nameEn": "Orc Leather Pants",
       "description": {
-        "ko": "마법사가 입는 로브 바지.",
-        "en": "마법사가 입는 로브 바지."
+        "ko": "오크 가죽 바지. 다리에 착용하는 하의.",
+        "en": "오크 가죽 바지. 다리에 착용하는 하의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -11936,8 +11966,8 @@
       "nameKo": "낡은 가죽 각반",
       "nameEn": "Worn Leather Leggings",
       "description": {
-        "ko": "왕국 기사단의 각반.",
-        "en": "왕국 기사단의 각반."
+        "ko": "낡은 가죽 각반. 다리에 착용하는 하의.",
+        "en": "낡은 가죽 각반. 다리에 착용하는 하의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -11965,8 +11995,8 @@
       "nameKo": "드래곤 각반",
       "nameEn": "Dragon Leggings",
       "description": {
-        "ko": "드래곤 비늘로 만든 각반.",
-        "en": "드래곤 비늘로 만든 각반."
+        "ko": "드래곤 각반. 다리에 착용하는 하의.",
+        "en": "드래곤 각반. 다리에 착용하는 하의."
       },
       "type": "equipment",
       "subtype": "armor",
@@ -11998,8 +12028,8 @@
       "nameKo": "밤도둑의 검은 바지",
       "nameEn": "Nightthief's Black Pants",
       "description": {
-        "ko": "어떤 공격도 막아내는 전설의 각반.",
-        "en": "어떤 공격도 막아내는 전설의 각반."
+        "ko": "밤도둑의 검은 바지. 다리에 착용하는 하의.",
+        "en": "밤도둑의 검은 바지. 다리에 착용하는 하의."
       },
       "type": "equipment",
       "subtype": "armor",
